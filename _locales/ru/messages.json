@@ -1,0 +1,40 @@
+{
+	"extName": {
+		"message":"Скрыть рекомендации YouTube",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDescription": {
+		"message":"Расширение скрывает рекомендации на YouTube. Достаточно поставить флажок в нужное положение.",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDefTitle": {
+		"message":"Блокировать рекомендации"
+	},
+	"hideRecomRight": {
+		"message":"Скрыть правые рекомендации"
+	},
+	"hideRecomHome": {
+		"message":"Скрыть главные рекомендации"
+	},
+	"hideComment": {
+		"message":"Скрыть блок комментариев"
+	},
+	"hidePlayList": {
+		"message":"Скрыть блок    Play-list"
+	},
+	"hideTranding": {
+		"message":"Скрыть блок            В тренде"
+	},
+	"hideRecomRightcss": {
+		"message":"-35px 17px 0 0"
+	},
+	"hideRecomHomecss": {
+		"message":"-35px 17px 0 0"
+	},
+	"hideRecomCommentcss": {
+		"message":"-32px 17px 0 0"
+	},
+	"hideRecomPlayListcss": {
+		"message":"-32px 17px 0 0"
+	}
+}

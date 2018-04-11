@@ -1,0 +1,7 @@
+.ytd-guide-section-renderer[role="option"]:nth-child(2n) {
+ 	display: none;
+}
+
+/*.ytd-page-manager:not([hidden]) {
+	display: none;
+}*/

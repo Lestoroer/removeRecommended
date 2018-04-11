@@ -1,0 +1,41 @@
+{
+	"extName": {
+		"message":"Remove YouTube Recommended"
+	},
+	"extDescription": {
+		"message":"Hides reccomendations. You may manage it - turn on or turn off."
+	},
+	"extDefTitle": {
+		"message":"Hide reccomendations"
+	},
+	"hideRecomRight": {
+		"message": "Hide Right Recommended"
+	},
+	"hideRecomHome": {
+		"message": "Hide Home Recommended"
+	},
+	"hideComment": {
+		"message": "Hide a block of comments"
+	},
+	"hidePlayList": {
+		"message": "Hide a block of     Play-List"
+	},
+	"hideTranding": {
+		"message": "Hide block         Tranding"
+	},
+	"hideRecomRightcss": {
+		"message":"-38px 17px 0 0"
+	},
+	"hideRecomHomecss": {
+		"message":"-38px 17px 0 0"
+	},
+	"hideRecomCommentcss": {
+		"message":"-38px 17px 0 0"
+	},
+	"hideRecomPlayListcss": {
+		"message":"-38px 17px 0 0"
+	},
+	"hideRecomTrandingcss": {
+		"message":"-38px 17px 0 0"
+	}
+}

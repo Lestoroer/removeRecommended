@@ -1,0 +1,39 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+   
+    "name": "__MSG_extName__",
+    "default_locale": "en",
+    "description": "__MSG_extDescription__",
+    "short_name": "HYR",
+    "manifest_version": 2,
+    "version": "0.6.6",
+
+    "icons": {        
+        "16": "youtube.png",
+        "32": "youtube.png",
+        "48": "youtube.png",
+        "128": "youtube.png"    
+    },
+
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["jquery-3.1.1.min.js", "content.js"],
+    "run_at" : "document_start"
+  }],
+
+  "background": {
+    "scripts": ["jquery-3.1.1.min.js", "background.js"]
+  },
+
+  "permissions": ["tabs", "storage"],
+
+  "browser_action": {
+         "default_title": "__MSG_extDefTitle__",
+         "default_icon": "youtube.png",
+         "default_popup": "popup.html"
+  },
+
+  "web_accessible_resources": ["css/checkedMineStyle.css", "css/checkedRightStyle.css", 
+    "css/checkedCommentStyle.css", "css/checkedPlayListStyle.css", "css/checkedTrandingStyle.css"]
+
+}

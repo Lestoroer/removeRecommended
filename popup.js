@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.onload = function() {
 
 	var checkbox = ['checkedMine', 'checkedRight', 'checkedComment', 'checkedPlayList', 'checkedTranding'];
 	var checkboxId = [];
@@ -7,35 +7,27 @@ $(document).ready(function() {
 	var off = false;
 
 	function start(checkbox, checkboxId) {
-		chrome.storage.sync.get(checkbox, function(item) { 
+		chrome.storage.sync.get(checkbox, function(item) {
 			var checked = item[checkbox];
-
-			if (checked === 'checked') {
-				$(checkboxId).attr('checked', checked);
-			} else {
-				$(checkboxId).attr('checked', 'checked');
-				if (checked === false) {
-					$(checkboxId).attr('checked', checked);
-				} else {
-					$(checkboxId).attr('checked', 'checked');
-				}
-			}
+			// console.log(checked);
+			document.querySelector(checkboxId).checked = (checked === false || checked == 'checked') ? checked : true;
 		});
 	}
 
 	function change(checkbox, checkboxId) {
-		$(checkboxId).on('change', function() {
-
+		document.querySelector(checkboxId).addEventListener('change', function(e) {
+			console.log(this);
+			this.classList.add('anim');
 			var obj = {};
 
 			chrome.storage.sync.get(checkbox, function(item) { 
 				if (item[checkbox] === 'checked') {
-					$(checkboxId).attr('checked', off);
+					document.querySelector(checkboxId).setAttribute('checked', off);
 
 					obj[checkbox] = off;
 					chrome.storage.sync.set( obj );
 				} else {
-					$(checkboxId).attr('checked', on);
+					document.querySelector(checkboxId).setAttribute('checked', on);
 					
 					obj[checkbox] = on;
 					chrome.storage.sync.set( obj );
@@ -53,4 +45,4 @@ $(document).ready(function() {
 		change(checkbox[i], checkboxId[i]);
 	}
 
-});
+};

@@ -16,7 +16,8 @@ function changeHtml(message, element) {
 }
 
 function changeCss(message, element) {
-	$(element).css('margin', message);
+	// console.log(element);
+	document.querySelector(element).style.margin =  message;
 }
 
 start();

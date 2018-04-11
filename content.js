@@ -49,7 +49,7 @@ chrome.runtime.onMessage.addListener( function(request) {
 	for (var value in request) {
 
 		var file = value + 'Style';
-		var isId = $('#'+file).length;
+		var isId = document.querySelectorAll('#'+file).length;
 
 		if (request[value] === 'checked' && isId == 0) {
 			loadCSS(file);
@@ -60,6 +60,4 @@ chrome.runtime.onMessage.addListener( function(request) {
 	}
 
 });
-
-
 

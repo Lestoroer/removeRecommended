@@ -1,15 +1,30 @@
 window.onload = function() {
 
+	// let switchers = {
+	// 	dom:document.querySelectorAll('.checkbox'),
+	// 	init:function() {
+	// 		for (let i = 0; i < this.dom.length; i++) {
+	// 			this.dom[i].addEventListener('click', (e) => {
+	// 				this.event(e);
+	// 			})
+	// 		}
+	// 	},
+	// 	event:function(e) {
+	// 		let enable = e.target.getAttribute('checked');
+	// 		e.target.setAttribute('checked', !(enable === 'true'));
+	// 	}
+	// }
+	// switchers.init();
+
 	var checkbox = ['checkedMine', 'checkedRight', 'checkedComment', 'checkedPlayList', 'checkedTranding'];
 	var checkboxId = [];
-    
+
 	var on = 'checked';
 	var off = false;
 
 	function start(checkbox, checkboxId) {
 		chrome.storage.sync.get(checkbox, function(item) {
-			var checked = item[checkbox];
-			// console.log(checked);
+			var checked = item[checkbox]; // console.log(checked);
 			document.querySelector(checkboxId).checked = (checked === false || checked == 'checked') ? checked : true;
 		});
 	}
@@ -23,17 +38,15 @@ window.onload = function() {
 			chrome.storage.sync.get(checkbox, function(item) { 
 				if (item[checkbox] === 'checked') {
 					document.querySelector(checkboxId).setAttribute('checked', off);
-
 					obj[checkbox] = off;
 					chrome.storage.sync.set( obj );
 				} else {
 					document.querySelector(checkboxId).setAttribute('checked', on);
-					
 					obj[checkbox] = on;
 					chrome.storage.sync.set( obj );
 				}
 
-			    chrome.runtime.sendMessage( obj );
+				chrome.runtime.sendMessage( obj );
 			});
 
 		});

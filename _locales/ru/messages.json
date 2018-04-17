@@ -20,21 +20,9 @@
 		"message":"Скрыть блок комментариев"
 	},
 	"hidePlayList": {
-		"message":"Скрыть блок    Play-list"
+		"message":"Скрыть блок Play-list"
 	},
 	"hideTranding": {
-		"message":"Скрыть блок            В тренде"
-	},
-	"hideRecomRightcss": {
-		"message":"-35px 17px 0 0"
-	},
-	"hideRecomHomecss": {
-		"message":"-35px 17px 0 0"
-	},
-	"hideRecomCommentcss": {
-		"message":"-32px 17px 0 0"
-	},
-	"hideRecomPlayListcss": {
-		"message":"-32px 17px 0 0"
+		"message":"Скрыть блок В тренде"
 	}
 }

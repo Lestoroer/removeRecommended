@@ -1,9 +1,11 @@
 {
 	"extName": {
-		"message":"Remove YouTube Recommended"
+		"message":"Remove YouTube Recommended",
+		"description": "Cкрывает отвлекающие рекомендации"
 	},
 	"extDescription": {
-		"message":"Hides reccomendations. You may manage it - turn on or turn off."
+		"message":"Hides reccomendations. You may manage it - turn on or turn off.",
+		"description": "Cкрывает отвлекающие рекомендации"
 	},
 	"extDefTitle": {
 		"message":"Hide reccomendations"
@@ -18,24 +20,9 @@
 		"message": "Hide a block of comments"
 	},
 	"hidePlayList": {
-		"message": "Hide a block of     Play-List"
+		"message": "Hide a block of Play-List"
 	},
 	"hideTranding": {
-		"message": "Hide block         Tranding"
-	},
-	"hideRecomRightcss": {
-		"message":"-38px 17px 0 0"
-	},
-	"hideRecomHomecss": {
-		"message":"-38px 17px 0 0"
-	},
-	"hideRecomCommentcss": {
-		"message":"-38px 17px 0 0"
-	},
-	"hideRecomPlayListcss": {
-		"message":"-38px 17px 0 0"
-	},
-	"hideRecomTrandingcss": {
-		"message":"-38px 17px 0 0"
+		"message": "Hide block Tranding"
 	}
 }

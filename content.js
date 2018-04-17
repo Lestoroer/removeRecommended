@@ -35,6 +35,7 @@ function start(checkbox, namefile) {
      	}
     });
 }
+localStorage.setItem('ffff', 'qweqweqweqeqweeqw');
 
 var checkbox = ["checkedMine", "checkedRight", "checkedComment", "checkedPlayList", 'checkedTranding'];
 var namefile = [];

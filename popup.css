@@ -3,6 +3,117 @@
 }
 
 body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  width: 300px;
+  color: rgba(90,90,90,0.65);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+  line-height: 1.3em;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.text_login {
+  display: inline-block;
+}
+
+header .icons {
+  width:40px;
+  height:40px;
+  display: inline-block;
+}
+
+.content {
+  margin: 40px 0;
+}
+
+.lbl {
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 48px;
+  background: rgba(0, 0, 0, 0.26);
+  border-radius: 100px;
+  cursor: pointer;
+}
+.lbl.anim{
+  transition: all .3s ease;  
+}
+.lbl:after {
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    content: '';
+    transition: .3s ease;
+}
+
+.lbl:active .lbl:after {
+    transform:scale(1.15, .85);
+}
+
+.cbx:checked ~ label {
+  background: rgba(135, 189, 200, 0.86);
+}
+
+.cbx:checked ~ label:after {
+  left: 23px;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cbx:disabled ~ label {
+  background: rgba(135, 189, 200, 0.96);
+  pointer-events: none;
+}
+
+.cbx:disabled ~ label:after {
+  background: white;
+}
+
+/* .content .separate:last-child {
+  border-bottom: 0;
+} */
+
+.separate {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.2);
+  margin: 12px 0;
+}
+
+
+
+
+footer {
+  padding: 6px 0;
+  background: #f6f6f6;
+}
+
+.button_project_help {
+  border: 2px solid #31abe1;
+  padding: 4px 0;
+  text-align: center;
+  margin: 12px 42px;
+  border-radius: 16px;
+  color: #31abe1;
+}
+
+.button_project_help span {
+  font-size: 16pt;
+}
+/* .google_icon {
+  width:57px;
+  height:57px;
+} */
+
+/* body {
   font-family: 'Proxima Nova';
   font-size: 14px;
   width: 200px;
@@ -83,4 +194,4 @@ body {
 
 .hidden {
   display: none;
-}
+} */

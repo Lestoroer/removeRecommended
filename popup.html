@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="popup.css" id="style1">
-    <script src="popup.js"></script>
-    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="popup.css" id="style1">
+	<script src="popup.js"></script>
+	<title></title>
 </head>
+
 <body>
-	<div>
+	<div style="display:none">
+		<svg id="google_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"
+		 viewBox="0 0 40 40">
+			<metadata>
+				<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+					<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+						<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							<rdf:Description rdf:about="" />
+						</rdf:RDF>
+					</x:xmpmeta>
+					<?xpacket end="w"?>
+			</metadata>
+			<image id="Google" x="-7" y="-7" width="54" height="54" xlink:href="data:img/png;base64,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"
+			/>
+		</svg>
+
+		<svg id="fb_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+			<metadata>
+				<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+					<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+						<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							<rdf:Description rdf:about="" />
+						</rdf:RDF>
+					</x:xmpmeta>
+					<?xpacket end="w"?>
+			</metadata>
+			<defs>
+				<style>
+					.cls-1 {
+						fill: #3b5998;
+					}
+				</style>
+			</defs>
+			<circle id="Ellipse" class="cls-1" cx="20" cy="20" r="20" />
+			<image id="Facebook-2" data-name="Facebook" x="15" y="11" width="10" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAQAAAAD4lRlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA4WCzEohsfpAAAArElEQVQY063PPUpDYRSE4ee7JJdg0BT+IFhYuCtXYGPvKtyEC5CswkbcgIiNjYbELmC8Mhaf1whJ6ZzqvJw5zIifOctNnrPIax56dJplftXD6RqlK4HWwhhPLr3p6t1huiTJVfU1YO4TLIGBPcV+XRybKJS8mCjGYGWluB84sVarxUdjU48l54Z2XRvi1lRx14evfS7+RjpQwFH1b/v5P7AxAjt9d/gyM8J7hd97OGAn2aW2FwAAAABJRU5ErkJggg=="
+			/>
+		</svg>
+
+		</svg>
+		<svg id="vk_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+			<metadata>
+				<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+					<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+						<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							<rdf:Description rdf:about="" />
+						</rdf:RDF>
+					</x:xmpmeta>
+					<?xpacket end="w"?>
+			</metadata>
+			<defs>
+				<style>
+					.cls-1 {
+						fill: #4a76a8;
+					}
+				</style>
+			</defs>
+			<circle id="Ellipse" class="cls-1" cx="20" cy="20" r="20" />
+			<image id="Vkontakte-2" data-name="Vkontakte" x="10" y="14" width="20" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAQAAADIBVVwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBA4WDQO2CzHvAAAA3ElEQVQY03XOPyvFcRiG8XtUMihHFkoWm1JegMHLMIrZjJ13oJTBICYLGSwmoZRIDFKSkvMzsBD5GM7X+aPc03Pd9zU8caFStyMijlTq6lYLD7lTqSzHi0ZGRSwWOiniduG5WCrnmohuX2BPxGDZbiQGCnzrEf0+wL6Iw7KNS8RGwXXR5xNsipnSr0pDrPnNiHgHu6ZLd9r4tvHyQikfzHrTmfl2Ma79lxeT7eLwn/nKoqcmjbXEmOoQt0TNRaFXvS0xJlw2xTMRXW4Ln7eLEXMOPHq2UrjPsUrl/gdV8Hv/FMwdiAAAAABJRU5ErkJggg=="
+			/>
+		</svg>
+	</div>
+	<header>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97px" height="21px">
+			<defs>
+				<radialGradient id="PSgrad_0">
+					<stop offset="0%" stop-color="rgb(24,132,201)" stop-opacity="1" />
+					<stop offset="100%" stop-color="rgb(52,175,227)" stop-opacity="1" />
+				</radialGradient>
+
+			</defs>
+			<text kerning="auto" font-family="Roboto" fill="rgb(169, 169, 169)" font-size="26px" x="56px" y="13.2px">Rec</text>
+			<text kerning="auto" font-family="Roboto" fill="rgb(100, 93, 248)" font-weight="bold" font-size="26px" x="0px" y="13.2px">Hide</text>
+			<text kerning="auto" font-family="Roboto" fill="url(#PSgrad_0)" font-weight="bold" font-size="26px" x="0px" y="13.2px">Hide</text>
+		</svg>
+
+		<div class="text_login">
+			Войти:
+		</div>
+
+		<svg class="icons google_icon">
+			<use xlink:href="#google_icon"></use>
+		</svg>
+		<svg class="icons fb_icon">
+			<use xlink:href="#fb_icon"></use>
+		</svg>
+		<svg class="icons vk_icon">
+			<use xlink:href="#vk_icon"></use>
+		</svg>
+
+	</header>
+
+	<div class="tab_view">
+
+	</div>
+
+	<div class="content">
+		<div>
+			<div class="hideRecomRight"></div>
+			<div class="cntrRight">
+				<div class="row press">
+					<input type="checkbox" id="checkedRight" class="cbx hidden" />
+					<label for="checkedRight" class="lbl"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="separate"></div>
+
+		<div>
+			<div class="hideRecomRight"></div>
+			<div class="cntrRight">
+				<div class="row press">
+					<input type="checkbox" id="checkedRight" class="cbx hidden" />
+					<label for="checkedRight" class="lbl"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="separate"></div>
+
+		<div>
+			<div class="hideRecomRight"></div>
+			<div class="cntrRight">
+				<div class="row press">
+					<input type="checkbox" id="checkedRight" class="cbx hidden" />
+					<label for="checkedRight" class="lbl"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="separate"></div>
+
+		<div>
+			<div class="hideRecomRight"></div>
+			<div class="cntrRight">
+				<div class="row press">
+					<input type="checkbox" id="checkedRight" class="cbx hidden" />
+					<label for="checkedRight" class="lbl"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="separate"></div>
+
+		<div>
+			<div class="hideRecomRight"></div>
+			<div class="cntrRight">
+				<div class="row press">
+					<input type="checkbox" id="checkedRight" class="cbx hidden" />
+					<label for="checkedRight" class="lbl"></label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="button_project_help">
+			<span>+</span>
+			ПОДДЕРЖАТЬ ПРОЕКТ
+		</div>
+	</footer>
+	<!-- <div>
 		<div class="hideRecomRight"></div>
 		<div class="cntrRight">
 			<div class="row press">
@@ -62,8 +227,11 @@
 				<label for="checkedTranding" class="lbl"></label>
 			</div>
 		</div>
-	</div>
+	</div> -->
+
+
 
 	<script src="languages.js"></script>
 </body>
+
 </html>

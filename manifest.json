@@ -33,7 +33,6 @@
          "default_popup": "popup.html"
   },
 
-  "web_accessible_resources": ["css/checkedMineStyle.css", "css/checkedRightStyle.css", 
-    "css/checkedCommentStyle.css", "css/checkedPlayListStyle.css", "css/checkedTrandingStyle.css"]
+  "web_accessible_resources": ["css/smart_extensions_style.css"]
 
 }

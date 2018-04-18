@@ -8,21 +8,27 @@
 		"description": "Cкрывает отвлекающие рекомендации"
 	},
 	"extDefTitle": {
-		"message":"Hide reccomendations"
+		"message":"Hide Recommendations"
 	},
-	"hideRecomRight": {
-		"message": "Hide Right Recommended"
+	"right": {
+		"message": "Right Recommendations"
 	},
-	"hideRecomHome": {
-		"message": "Hide Home Recommended"
+	"mine": {
+		"message": "All video in home"
 	},
-	"hideComment": {
-		"message": "Hide a block of comments"
+	"mine_recommen": {
+		"message": "Home Recommendations"
 	},
-	"hidePlayList": {
-		"message": "Hide a block of Play-List"
+	"comment": {
+		"message": "Сomments"
 	},
-	"hideTranding": {
-		"message": "Hide block Tranding"
+	"playList": {
+		"message": "Playlists"
+	},
+	"videowall": {
+		"message": "Video in end video"
+	},
+	"tranding": {
+		"message": "Tranding"
 	}
 }

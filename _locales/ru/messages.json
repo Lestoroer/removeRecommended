@@ -10,19 +10,25 @@
 	"extDefTitle": {
 		"message":"Блокировать рекомендации"
 	},
-	"hideRecomRight": {
-		"message":"Скрыть правые рекомендации"
+	"right": {
+		"message":"Правые рекомендации"
 	},
-	"hideRecomHome": {
-		"message":"Скрыть главные рекомендации"
+	"mine": {
+		"message":"Все видео на главной"
 	},
-	"hideComment": {
-		"message":"Скрыть блок комментариев"
+	"mine_recommen": {
+		"message": "Главные рекомендации"
 	},
-	"hidePlayList": {
-		"message":"Скрыть блок Play-list"
+	"comment": {
+		"message":"Комментарии"
 	},
-	"hideTranding": {
-		"message":"Скрыть блок В тренде"
+	"playList": {
+		"message":"Плейлист"
+	},
+	"videowall": {
+		"message": "Видео в конце видео"
+	},
+	"tranding": {
+		"message":"Тренды"
 	}
 }

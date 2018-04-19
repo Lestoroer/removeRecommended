@@ -34,7 +34,6 @@ body {
 }
 .main{
   width: 300px;
-  height: 351px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2); 
@@ -108,10 +107,10 @@ body {
 .menu_item.active{
   background: #e2e2e2;
 }
-.menu_item:hover .menu_youtube{
+.menu_item:hover .menu{
   fill: #ff0000;
 }
-.menu_item.active .menu_youtube{
+.menu_item.active .menu{
   fill: #ff0000;
 }
 .menu_item:hover .fb_menu{
@@ -141,7 +140,16 @@ body {
   background: #d8d8d8;
   right: 0;
 }
+.menu_item:nth-child(1).active ~ .menu_item:nth-child(2):after{
+  width: 0;
+}
 .menu_item:nth-child(1):hover ~ .menu_item:nth-child(2):after{
+  width: 0;
+}
+.menu_item:nth-child(2).active:after{
+  width: 0;
+}
+.menu_item:nth-child(2).active ~ .menu_item:nth-child(3):after{
   width: 0;
 }
 .menu_item:nth-child(2):hover:after{
@@ -150,32 +158,35 @@ body {
 .menu_item:nth-child(2):hover ~ .menu_item:nth-child(3):after{
   width: 0;
 }
+.menu_item:nth-child(3).active:after{
+  width: 0;
+}
 .menu_item:nth-child(3):hover:after{
   width: 0;
 }
-.menu_youtube{
+.youtube_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.fb_menu{
+.facebook_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.vk_menu{
+.vk\.com_menu{
   fill: #ababab;
   width: 20px;
   height: 18px;
 }
-.wrapper_youtube{
+.wrapper{
   display: none;
 }
-.wrapper_youtube.active{
+.wrapper.active{
   margin: 20px 21px 0 20px;
   display: block;
 }
-.wrapper_youtube_text{
+.wrapper_text{
   color: #676767;
   font-size: 15px;
   margin-right: 5px;
@@ -199,10 +210,12 @@ body {
   background-color: #D9D9D9;
   border-radius: 20px;
   transition: .2s;
+  box-shadow: inset 1px 2px 5px 0px rgba(0, 0, 0, 0.1); 
 }
 
 .checkbox[checked="true"]:before{
-  background-color: #00A9E2;
+  box-shadow: inset 1px 2px 5px 0px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(to right, #34afe3 0%,#1884c9 100%);
 }
 
 .checkbox{
@@ -226,7 +239,7 @@ body {
 }
 
 .checkbox[checked="true"]:after{
-  left:23px;
+  left:19px;
 }
 
 footer {

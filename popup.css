@@ -108,10 +108,10 @@ body {
 .menu_item.active{
   background: #e2e2e2;
 }
-.menu_item:hover .menu_youtube{
+.menu_item:hover .menu{
   fill: #ff0000;
 }
-.menu_item.active .menu_youtube{
+.menu_item.active .menu{
   fill: #ff0000;
 }
 .menu_item:hover .fb_menu{
@@ -153,29 +153,29 @@ body {
 .menu_item:nth-child(3):hover:after{
   width: 0;
 }
-.menu_youtube{
+.youtube_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.fb_menu{
+.facebook_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.vk_menu{
+.vk\.com_menu{
   fill: #ababab;
   width: 20px;
   height: 18px;
 }
-.wrapper_youtube{
+.wrapper{
   display: none;
 }
-.wrapper_youtube.active{
+.wrapper.active{
   margin: 20px 21px 0 20px;
   display: block;
 }
-.wrapper_youtube_text{
+.wrapper_text{
   color: #676767;
   font-size: 15px;
   margin-right: 5px;

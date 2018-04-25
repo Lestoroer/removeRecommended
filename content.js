@@ -11,6 +11,7 @@ function start(data) {
     console.log('data', data);
 	chrome.storage.sync.get(function(item) {
         for (let i in item) {
+            if (i === 'sort') continue;
             if (location.href.includes(i)) { // site 
                 console.log('site', i);
                 let body = document.querySelector('html');

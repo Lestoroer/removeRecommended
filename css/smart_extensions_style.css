@@ -158,3 +158,36 @@ html[videowall="true"] .html5-endscreen {
 html[mine_recommen="true"] #contents:first-child div#dismissable.style-scope.ytd-shelf-renderer{
 	display: none;
 }
+
+html[vk_people_you_may_know="true"] #friends_possible_block{
+	display: none;
+}
+
+html[vk_ads="true"] .ads_ads_box{
+	display: none;
+}
+
+html[vk_ads="true"] #ads_left {
+	display: none;
+}
+
+html[vk_ads="true"] [class~="_ads"] {
+	display: none;
+}
+
+html[vk_history="true"] .stories_feed_wrap{
+	display: none;
+} 
+html[fb_people_you_may_know="true"] [data-story_category="4"]{
+	display: none;
+}
+html[fb_people_you_may_know="true"] #pagelet_ego_pane {
+	display: none;
+}
+html[fb_people_you_may_know="true"] #pagelet_pymk_timeline {
+	display: none;
+}
+
+html[fb_people_you_may_know="true"] #fbSearchResultsBox {
+	display: none;
+}

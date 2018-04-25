@@ -9,12 +9,17 @@
 
 chrome.runtime.onMessage.addListener(function(request){
 	chrome.tabs.query({},function(tabs){     
-	    tabs.forEach(function(tab){
-	    	if (tab.url.search('youtube.com') > -1 || 
-	    		tab.url.search('vk.com') > -1) {
-	    		console.log(request);
-	    		chrome.tabs.sendMessage(tab.id, request);
-	    	}
+	    tabs.forEach(function(tab) {
+			console.log('for tabs');
+			for (let i in request) {
+				if (i === 'sort') continue;
+				console.log('req ',i);
+				if (tab.url.search(i) > -1) {
+					console.log('send')
+					console.log(request);
+					chrome.tabs.sendMessage(tab.id, request);
+				}
+			}
 	    });
 	 });
 });

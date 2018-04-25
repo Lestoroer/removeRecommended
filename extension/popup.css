@@ -114,10 +114,10 @@ body {
   fill: #ff0000;
 }
 .menu_item:hover .facebook_menu{
-  fill: #4a76a8;
+  fill: #3b5998;
 }
 .menu_item.active .facebook_menu{
-  fill: #4a76a8;
+  fill: #3b5998;
 }
 .menu_item:hover .vk\.com_menu{
   fill: #4a76a8;

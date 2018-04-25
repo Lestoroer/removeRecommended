@@ -6,13 +6,13 @@
     "description": "__MSG_extDescription__",
     "short_name": "HYR",
     "manifest_version": 2,
-    "version": "0.6.6",
+    "version": "1.0",
 
     "icons": {        
-        "16": "youtube.png",
-        "32": "youtube.png",
-        "48": "youtube.png",
-        "128": "youtube.png"
+        "16": "smart_extensions.png",
+        "32": "smart_extensions.png",
+        "48": "smart_extensions.png",
+        "128": "smart_extensions.png"
     },
 
   "content_scripts": [{
@@ -29,7 +29,7 @@
 
    "browser_action": {
          "default_title": "__MSG_extDefTitle__",
-         "default_icon": "youtube.png",
+         "default_icon": "smart_extensions.png",
          "default_popup": "popup.html"
   },
 

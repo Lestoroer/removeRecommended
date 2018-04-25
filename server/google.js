@@ -10,7 +10,7 @@ module.exports = (app) => {
     authlink.push(`&access_type=offline`);
     authlink.push(`&include_granted_scopes=true`);
     authlink.push(`&state=state_parameter_passthrough_value`);
-    authlink.push(`&redirect_uri=${encodeURIComponent(redirect_link)}`);
+    authlink.push(`&redirect_uri=${(redirect_link)}`);
     authlink.push(`&response_type=code`);
     authlink.push(`&client_id=${secret.google.client_id}`);
     authlink = authlink.join('');

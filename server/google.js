@@ -2,7 +2,7 @@ const request = require('request');
 const secret = require('../config');
 
 module.exports = (app) => {
-    let redirect_link = `${secret.domen}/google/`;
+    let redirect_link = `${secret.domen}/google`;
     
     let authlink = [];
     authlink.push(`https://accounts.google.com/o/oauth2/v2/auth`);

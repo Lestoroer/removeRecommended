@@ -6,4 +6,4 @@ app.get('/', (req, res) => {
 
 require('./server/vk') (app);
 
-app.listen(8080);
+app.listen(80);

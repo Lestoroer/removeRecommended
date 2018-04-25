@@ -107,22 +107,22 @@ body {
 .menu_item.active{
   background: #e2e2e2;
 }
-.menu_item:hover .menu_youtube{
+.menu_item:hover .youtube_menu{
   fill: #ff0000;
 }
-.menu_item.active .menu_youtube{
+.menu_item.active .youtube_menu{
   fill: #ff0000;
 }
-.menu_item:hover .fb_menu{
+.menu_item:hover .facebook_menu{
+  fill: #3b5998;
+}
+.menu_item.active .facebook_menu{
+  fill: #3b5998;
+}
+.menu_item:hover .vk\.com_menu{
   fill: #4a76a8;
 }
-.menu_item.active .fb_menu{
-  fill: #4a76a8;
-}
-.menu_item:hover .vk_menu{
-  fill: #4a76a8;
-}
-.menu_item.active .vk_menu{
+.menu_item.active .vk\.com_menu{
   fill: #4a76a8;
 }
 .menu_item:nth-child(1){  
@@ -164,17 +164,17 @@ body {
 .menu_item:nth-child(3):hover:after{
   width: 0;
 }
-.menu_youtube{
+.youtube_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.fb_menu{
+.facebook_menu{
   fill: #ababab;
   width: 20px;
   height: 20px;
 }
-.vk_menu{
+.vk\.com_menu{
   fill: #ababab;
   width: 20px;
   height: 18px;
@@ -196,11 +196,60 @@ body {
   padding-bottom: 9px;
   border-bottom: 1px solid #ebebed;
 }
+.vk_items > .wrapper_text{
+  margin-right: 14px;
+  cursor: pointer;
+}
+.row.vk_items{
+  position: relative;
+  cursor: default;
+}
 .row:nth-last-child(1){
   border-bottom: 1px solid rgba(0,0,0, .0);
 }
+.arrow{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -3px;
+  fill: #676767;
+  cursor: pointer;
+}
 .row .checkbox{
   margin-left: 5px;
+}
+.row_items_scroll{
+  background: rgba(240,240,240, .7);
+  margin: 10px -16px 0 -16px;
+}
+.row_items_container{
+  background: rgba(240,240,240, .7);
+  max-height: 155px;
+  margin: 10px 5px 0 0px;
+  overflow-y: auto;
+}
+.row_items_container::-webkit-scrollbar{
+  width: 4px;
+}
+.row_items_container::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+  background: #c5c5c5;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.row_items{
+  margin: 7px 12px 0px 16px;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed #d5d5d5;
+}
+.vk_menu_text{
+  margin-left: 5px;
+}
+.row_items:last-child{
+  border-bottom: 1px solid rgba(255,255,255, .0);
+}
+.row_items .wrapper_text{
+  color: #1b1b1b;
+  margin-right: 15px;
 }
 .checkbox:before{
   content:'';

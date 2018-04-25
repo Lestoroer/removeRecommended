@@ -30,5 +30,26 @@
 	},
 	"tranding": {
 		"message": "Tranding"
+	},
+	"vk_history": {
+		"message": "Stories"
+	},
+	"vk_people_you_may_know": {
+		"message": "People you may know"
+	},
+	"vk_ads": {
+		"message": "Advertisement"
+	},
+	"vk_menu": {
+		"message": "Пункты меню"
+	},
+	"fb_history": {
+		"message": "Истории"
+	},
+	"fb_people_you_may_know": {
+		"message": "Вы можете их знать"
+	},
+	"fb_did_you_know": {
+		"message": "Пункты меню"
 	}
 }

@@ -111,7 +111,7 @@ let switchers = {
 		chrome.runtime.sendMessage(this.data);
 	}
 }
-/*document.getElementById("test").addEventListener('click', function(){
-	console.log(this)
-});*/
+document.getElementById("items_container").addEventListener('click', function(){
+	this.classList.toggle("showed")
+});
 switchers.init();

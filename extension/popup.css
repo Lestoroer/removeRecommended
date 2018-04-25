@@ -219,8 +219,12 @@ body {
   margin-left: 5px;
 }
 .row_items_scroll{
+  display: none;
   background: rgba(240,240,240, .7);
   margin: 10px -16px 0 -16px;
+}
+.row.vk_items.showed .row_items_scroll{
+  display: block;
 }
 .row_items_container{
   background: rgba(240,240,240, .7);

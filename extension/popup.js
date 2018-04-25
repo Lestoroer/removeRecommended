@@ -59,10 +59,21 @@ let switchers = {
 			videowall:true
 		},
 		'vk.com': {
-			vk_history:true,
+			vk_history:false,
 			vk_people_you_may_know:true,
 			vk_ads:true,
-			vk_menu:true
+            vk_menu_myprofile: false,
+            vk_menu_news: false,
+            vk_menu_messages: false,
+            vk_menu_friends: false,
+            vk_menu_communities: false,
+            vk_menu_photos: false,
+            vk_menu_music: false,
+            vk_menu_videos: false,
+            vk_menu_games: false,
+            vk_menu_market: false,
+            vk_menu_bookmarks: false,
+            vk_menu_documents: false,
 		},
 		'facebook': {
 			fb_people_you_may_know:true,
@@ -94,6 +105,7 @@ let switchers = {
 					check.addEventListener('click', (e) => {this.event(e);});
 				}	
 			}
+            updateVkMenuPickCount();
 		});
 	},
 	event: function(e) {
@@ -109,8 +121,19 @@ let switchers = {
 		chrome.storage.sync.set(this.data);
 		console.log(this.data);
 		chrome.runtime.sendMessage(this.data);
+        console.log(document.getElementsByClassName('vk_items')[0]);
+        updateVkMenuPickCount();
 	}
 }
+
+function updateVkMenuPickCount() {
+    let dom_vk_menu_pick_count = document.getElementById('vk_menu_pick_count');
+    console.log(document.getElementsByClassName('vk_items')[0]);
+    let checkbox_picked = document.getElementsByClassName('vk_items')[0].querySelectorAll('.checkbox[checked="true"]');
+    dom_vk_menu_pick_count.innerText = checkbox_picked.length;
+
+}
+
 /*document.getElementById("test").addEventListener('click', function(){
 	console.log(this)
 });*/

@@ -1,10 +1,8 @@
 const request = require('request');
 const secret = require('../config');
 
-console.log(secret.google);
-
 module.exports = (app) => {
-    let redirect_link = `${secret.address}/google/`;
+    let redirect_link = `${secret.domen}/google`;
     
     let authlink = [];
     authlink.push(`https://accounts.google.com/o/oauth2/v2/auth`);
@@ -12,7 +10,7 @@ module.exports = (app) => {
     authlink.push(`&access_type=offline`);
     authlink.push(`&include_granted_scopes=true`);
     authlink.push(`&state=state_parameter_passthrough_value`);
-    authlink.push(`&redirect_uri=${encodeURIComponent(redirect_link)}`);
+    authlink.push(`&redirect_uri=${(redirect_link)}`);
     authlink.push(`&response_type=code`);
     authlink.push(`&client_id=${secret.google.client_id}`);
     authlink = authlink.join('');
@@ -37,7 +35,7 @@ module.exports = (app) => {
                     if (data.sub) {
                         //data.email;
                         let user_id = `g${data.sub}`;
-                        
+                        res.end(`:) your id = ${data.sub}`);
                         // mongo.updateById({id:user_id}, {id:user_id, token:token}, function(err, rez) {
                         //     // console.log(rez.result);
                         //     users[user_id] = users[user_id] || {};

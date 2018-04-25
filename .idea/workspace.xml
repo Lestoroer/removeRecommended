@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c56fe8-3ea6-45af-b024-6c7e7766994b" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/extension/_locales/en/messages.json" afterPath="$PROJECT_DIR$/extension/_locales/en/messages.json" />
       <change beforePath="$PROJECT_DIR$/extension/_locales/ru/messages.json" afterPath="$PROJECT_DIR$/extension/_locales/ru/messages.json" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+>>>>>>> sergey
+>>>>>>> 29d9f0f1553ac3d83ddbbc86834864ee49ec0eac
       <change beforePath="$PROJECT_DIR$/extension/popup.html" afterPath="$PROJECT_DIR$/extension/popup.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,6 +52,7 @@
       <file leaf-file-name="popup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/popup.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="298">
               <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
               <folding />
@@ -77,6 +85,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="486">
+              <caret line="222" column="81" lean-forward="false" selection-start-line="222" selection-start-column="81" selection-end-line="222" selection-end-column="81" />
+=======
+            <state relative-caret-position="564">
+              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+>>>>>>> sergey
+>>>>>>> 29d9f0f1553ac3d83ddbbc86834864ee49ec0eac
               <folding />
             </state>
           </provider>
@@ -292,12 +309,20 @@
       <workItem from="1523893546927" duration="2962000" />
       <workItem from="1524067950999" duration="111000" />
       <workItem from="1524076169553" duration="1362000" />
-      <workItem from="1524671568370" duration="1606000" />
+      <workItem from="1524671568370" duration="1899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9204000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="7067000" />
+=======
+    <option name="totallyTimeSpent" value="6781000" />
+>>>>>>> sergey
+>>>>>>> 29d9f0f1553ac3d83ddbbc86834864ee49ec0eac
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="24" width="1680" height="961" extended-state="0" />
@@ -422,13 +447,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extension/popup.js">
+<<<<<<< HEAD
+=======
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="522">
           <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
           <folding>
             <marker date="1524677375627" expanded="true" signature="1175:1286" ph="..." />
             <marker date="1524677375627" expanded="true" signature="1211:1276" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="564">
+          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <folding />
+>>>>>>> sergey
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/popup.html">
+>>>>>>> 29d9f0f1553ac3d83ddbbc86834864ee49ec0eac
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="486">
+          <caret line="222" column="81" lean-forward="false" selection-start-line="222" selection-start-column="81" selection-end-line="222" selection-end-column="81" />
+          <folding />
+=======
+        <state relative-caret-position="522">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <marker date="1524677375627" expanded="true" signature="1175:1286" ph="..." />
+            <marker date="1524677375627" expanded="true" signature="1211:1276" ph="..." />
+          </folding>
+>>>>>>> sergey
         </state>
       </provider>
     </entry>

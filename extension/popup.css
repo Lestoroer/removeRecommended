@@ -107,22 +107,22 @@ body {
 .menu_item.active{
   background: #e2e2e2;
 }
-.menu_item:hover .menu{
+.menu_item:hover .youtube_menu{
   fill: #ff0000;
 }
-.menu_item.active .menu{
+.menu_item.active .youtube_menu{
   fill: #ff0000;
 }
-.menu_item:hover .fb_menu{
+.menu_item:hover .facebook_menu{
   fill: #4a76a8;
 }
-.menu_item.active .fb_menu{
+.menu_item.active .facebook_menu{
   fill: #4a76a8;
 }
-.menu_item:hover .vk_menu{
+.menu_item:hover .vk\.com_menu{
   fill: #4a76a8;
 }
-.menu_item.active .vk_menu{
+.menu_item.active .vk\.com_menu{
   fill: #4a76a8;
 }
 .menu_item:nth-child(1){  

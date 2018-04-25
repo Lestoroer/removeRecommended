@@ -43,13 +43,13 @@
 	"vk_menu": {
 		"message": "Пункты меню"
 	},
-	"facebook_history": {
+	"fb_history": {
 		"message": "Истории"
 	},
-	"facebook_people_you_may_know": {
+	"fb_people_you_may_know": {
 		"message": "Вы можете их знать"
 	},
-	"facebook_did_you_know": {
+	"fb_did_you_know": {
 		"message": "Пункты меню"
 	}
 }

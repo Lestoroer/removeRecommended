@@ -178,3 +178,16 @@ html[vk_ads="true"] [class~="_ads"] {
 html[vk_history="true"] .stories_feed_wrap{
 	display: none;
 } 
+html[fb_people_you_may_know="true"] [data-story_category="4"]{
+	display: none;
+}
+html[fb_people_you_may_know="true"] #pagelet_ego_pane {
+	display: none;
+}
+html[fb_people_you_may_know="true"] #pagelet_pymk_timeline {
+	display: none;
+}
+
+html[fb_people_you_may_know="true"] #fbSearchResultsBox {
+	display: none;
+}

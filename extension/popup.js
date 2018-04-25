@@ -65,8 +65,8 @@ let switchers = {
 			vk_menu:true
 		},
 		'facebook': {
-			facebook_people_you_may_know:true,
-			facebook_did_you_know:true
+			fb_people_you_may_know:true,
+			fb_did_you_know:true
 		}
 	},
 	dom: document.querySelectorAll('.checkbox'),

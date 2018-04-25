@@ -1,0 +1,23 @@
+{
+  "name": "smart_extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lestoroer/removeRecommended.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lestoroer/removeRecommended/issues"
+  },
+  "homepage": "https://github.com/Lestoroer/removeRecommended#readme",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}

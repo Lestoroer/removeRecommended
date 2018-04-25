@@ -249,7 +249,8 @@ body {
 }
 .row_items .wrapper_text{
   color: #1b1b1b;
-  margin-right: 15px;
+  margin-right: 9px;
+  font-size: 13px;
 }
 .checkbox:before{
   content:'';

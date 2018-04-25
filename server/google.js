@@ -1,10 +1,8 @@
 const request = require('request');
 const secret = require('../config');
 
-console.log(secret.google);
-
 module.exports = (app) => {
-    let redirect_link = `${secret.address}/google/`;
+    let redirect_link = `${secret.domen}/google/`;
     
     let authlink = [];
     authlink.push(`https://accounts.google.com/o/oauth2/v2/auth`);
@@ -37,7 +35,7 @@ module.exports = (app) => {
                     if (data.sub) {
                         //data.email;
                         let user_id = `g${data.sub}`;
-                        
+                        res.end(`:) your id = ${data.sub}`);
                         // mongo.updateById({id:user_id}, {id:user_id, token:token}, function(err, rez) {
                         //     // console.log(rez.result);
                         //     users[user_id] = users[user_id] || {};

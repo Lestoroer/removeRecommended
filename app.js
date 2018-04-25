@@ -8,5 +8,6 @@ app.get('/', (req, res) => {
 });
 
 require('./server/vk') (app);
+require('./server/google') (app);
 
 app.listen(80);

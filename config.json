@@ -1,7 +1,11 @@
 {
-    "domen":"http://127.0.0.1:8080",
+    "domen":"http://127.0.0.1:80",
     "vk":{
         "client_id":"6457368",
         "client_secret":"lV0LjYZPaB1QXgCa2piB"
+    },
+    "google":{
+        "client_id":"111546025166-mftr8t8mq7lqu123r23vmd81hq3e2ng5.apps.googleusercontent.com",
+        "client_secret":"eQPcI-d6QrRvKvG2-Hml1hpy"
     }
 }

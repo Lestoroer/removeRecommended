@@ -111,4 +111,7 @@ let switchers = {
 		chrome.runtime.sendMessage(this.data);
 	}
 }
+/*document.getElementById("test").addEventListener('click', function(){
+	console.log(this)
+});*/
 switchers.init();

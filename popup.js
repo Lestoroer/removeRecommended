@@ -53,8 +53,8 @@ let switchers = {
 			mine:true,
 			mine_recommen:true,
 			right:true,
-			comment:true,
-			playList:true,
+			comment:false,
+			playList:false,
 			tranding:true,
 			videowall:true
 		},

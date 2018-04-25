@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c56fe8-3ea6-45af-b024-6c7e7766994b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/extension/_locales/en/messages.json" afterPath="$PROJECT_DIR$/extension/_locales/en/messages.json" />
+      <change beforePath="$PROJECT_DIR$/extension/_locales/ru/messages.json" afterPath="$PROJECT_DIR$/extension/_locales/ru/messages.json" />
       <change beforePath="$PROJECT_DIR$/extension/popup.html" afterPath="$PROJECT_DIR$/extension/popup.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,11 +42,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popup.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="popup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extension/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/_locales/en/messages.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="170" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extension/_locales/ru/messages.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4394">
+              <caret line="169" column="30" lean-forward="false" selection-start-line="169" selection-start-column="30" selection-end-line="169" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extension/language.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,16 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extension/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,6 +127,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>playlist</find>
+      <find>Войти</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,6 +147,8 @@
         <option value="$PROJECT_DIR$/extension/background.js" />
         <option value="$PROJECT_DIR$/extension/popup.js" />
         <option value="$PROJECT_DIR$/extension/popup.html" />
+        <option value="$PROJECT_DIR$/extension/_locales/en/messages.json" />
+        <option value="$PROJECT_DIR$/extension/_locales/ru/messages.json" />
       </list>
     </option>
   </component>
@@ -137,7 +164,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="45" />
     <option name="y" value="24" />
     <option name="width" value="1680" />
@@ -198,6 +225,26 @@
               <item name="yourecom" type="b2602c69:ProjectViewProjectNode" />
               <item name="yourecom" type="462c0819:PsiDirectoryNode" />
               <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="_locales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yourecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yourecom" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="_locales" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yourecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yourecom" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="_locales" type="462c0819:PsiDirectoryNode" />
+              <item name="ru" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yourecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yourecom" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -250,10 +297,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6781000" />
+    <option name="totallyTimeSpent" value="9204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="24" width="1680" height="961" extended-state="1" />
+    <frame x="45" y="24" width="1680" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21547619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -286,26 +333,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extension/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding>
-            <marker date="1524677375627" expanded="true" signature="1175:1286" ph="..." />
-            <marker date="1524677375627" expanded="true" signature="1211:1276" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extension/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="222" column="81" lean-forward="false" selection-start-line="222" selection-start-column="81" selection-end-line="222" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html.html" />
     <entry file="file://$PROJECT_DIR$/popup.css" />
     <entry file="file://$PROJECT_DIR$/popup.js" />
     <entry file="file://$PROJECT_DIR$/content.js" />
@@ -394,14 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extension/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extension/popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -410,6 +429,38 @@
             <marker date="1524677375627" expanded="true" signature="1175:1286" ph="..." />
             <marker date="1524677375627" expanded="true" signature="1211:1276" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/language.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/_locales/en/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="170" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/_locales/ru/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4394">
+          <caret line="169" column="30" lean-forward="false" selection-start-line="169" selection-start-column="30" selection-end-line="169" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

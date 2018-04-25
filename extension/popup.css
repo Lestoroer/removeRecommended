@@ -207,6 +207,9 @@ body {
 .row:nth-last-child(1){
   border-bottom: 1px solid rgba(0,0,0, .0);
 }
+.row.vk_items.showed .arrow{
+  transform: rotate(180deg);
+}
 .arrow{
   position: absolute;
   width: 10px;

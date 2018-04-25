@@ -45,7 +45,7 @@ let tabs = {
 	}
 }
 
-tabs.init()
+tabs.init();
 
 let switchers = {
 	data:{
@@ -54,7 +54,7 @@ let switchers = {
 			mine_recommen:true,
 			right:true,
 			comment:false,
-			playList:false,
+			playlist:false,
 			tranding:true,
 			videowall:true
 		},

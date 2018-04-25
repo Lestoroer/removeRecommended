@@ -13,10 +13,7 @@ chrome.runtime.onMessage.addListener(function(request){
 			console.log('for tabs');
 			for (let i in request) {
 				if (i === 'sort') continue;
-				console.log('req ',i);
 				if (tab.url.search(i) > -1) {
-					console.log('send')
-					console.log(request);
 					chrome.tabs.sendMessage(tab.id, request);
 				}
 			}

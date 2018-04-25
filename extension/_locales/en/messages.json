@@ -1,14 +1,20 @@
 {
 	"extName": {
-		"message":"Remove YouTube Recommended",
-		"description": "Cкрывает отвлекающие рекомендации"
+		"message":"Remove Youtube recommendations",
+		"description": "Remove Youtube recommendations"
 	},
 	"extDescription": {
-		"message":"Hides reccomendations. You may manage it - turn on or turn off.",
-		"description": "Cкрывает отвлекающие рекомендации"
+		"message":"The extension hides YouTube recommendations. It is enough to put a check mark in the necessary position.",
+		"description": "Remove Youtube recommendations"
 	},
 	"extDefTitle": {
 		"message":"Hide Recommendations"
+	},
+	"support_project": {
+		"message": "Support project"
+	},
+	"login": {
+		"message": "Log in:"
 	},
 	"right": {
 		"message": "Right Recommendations"
@@ -41,15 +47,126 @@
 		"message": "Advertisement"
 	},
 	"vk_menu": {
-		"message": "Пункты меню"
+		"message": "Menu items"
+	},
+	"vk_menu_myprofile": {
+		"message": "My profile"
+	},
+	"vk_menu_news": {
+		"message": "News"
+	},
+	"vk_menu_messages": {
+		"message": "Messages"
+	},
+	"vk_menu_friends": {
+		"message": "Friends"
+	},
+	"vk_menu_communities": {
+		"message": "Communities"
+	},
+	"vk_menu_photos": {
+		"message": "Photos"
+	},
+	"vk_menu_music": {
+		"message": "Music"
+	},
+	"vk_menu_videos": {
+		"message": "Videos"
+	},
+	"vk_menu_games": {
+		"message": "Games"
+	},
+	"vk_menu_market": {
+		"message": "Market"
+	},
+	"vk_menu_bookmarks": {
+		"message": "Bookmarks"
+	},
+	"vk_menu_documents": {
+		"message": "Documents"
 	},
 	"fb_history": {
-		"message": "Истории"
+		"message": "Stories"
 	},
 	"fb_people_you_may_know": {
-		"message": "Вы можете их знать"
+		"message": "People you may know"
 	},
-	"fb_did_you_know": {
-		"message": "Пункты меню"
+	"fb_menu_items": {
+		"message": "Menu items"
+	},
+	"fb_menu_groups": {
+		"message": "Groups"
+	},
+	"fb_menu_pages": {
+		"message": "Pages"
+	},
+	"fb_menu_events": {
+		"message": "Events"
+	},
+	"fb_menu_friend_lists": {
+		"message": "Friend lists"
+	},
+	"fb_menu_on_this_day": {
+		"message": "On this day"
+	},
+	"fb_menu_pages_feed": {
+		"message": "Pages feed"
+	},
+	"fb_menu_photos": {
+		"message": "Photos"
+	},
+	"fb_menu_find_friends": {
+		"message": "Find Friends"
+	},
+	"fb_menu_games": {
+		"message": "Games"
+	},
+	"fb_menu_suggest_edits": {
+		"message": "Suggest Edits"
+	},
+	"fb_menu_offers": {
+		"message": "Offers"
+	},
+	"fb_menu_live_video": {
+		"message": "Live video"
+	},
+	"fb_menu_payment_history": {
+		"message": "Payment history"
+	},
+	"fb_menu_gaming_video": {
+		"message": "Gaming video"
+	},
+	"fb_menu_buy_and_sell_groups": {
+		"message": "Buy and sell groups"
+	},
+	"fb_menu_create_a_frame": {
+		"message": "Create a frame"
+	},
+	"fb_menu_discover_people": {
+		"message": "Discover people"
+	},
+	"fb_menu_crisis_response": {
+		"message": "Crisis Response"
+	},
+	"fb_menu_recommendations": {
+		"message": "Recommendations"
+	},
+	"fb_menu_recent_ad_activity": {
+		"message": "Recent ad activity"
+	},
+	"fb_menu_saved": {
+		"message": "Saved"
+	},
+	"fb_menu_moves": {
+		"message": "Moves"
+	},
+	"fb_menu_weather": {
+		"message": "Weather"
+	},
+	"fb_menu_manage_apps": {
+		"message": "Manage Apps"
+	},
+	"fb_menu_insights": {
+		"message": "Insights"
 	}
 }

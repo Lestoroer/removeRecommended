@@ -1,0 +1,55 @@
+{
+	"extName": {
+		"message":"Скрыть рекомендации YouTube",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDescription": {
+		"message":"Расширение скрывает рекомендации на YouTube. Достаточно поставить флажок в нужное положение.",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDefTitle": {
+		"message":"Блокировать рекомендации"
+	},
+	"right": {
+		"message":"Правые рекомендации"
+	},
+	"mine": {
+		"message":"Все видео на главной"
+	},
+	"mine_recommen": {
+		"message": "Главные рекомендации"
+	},
+	"comment": {
+		"message":"Комментарии"
+	},
+	"playList": {
+		"message":"Плейлист"
+	},
+	"videowall": {
+		"message": "Видео в конце видео"
+	},
+	"tranding": {
+		"message":"Тренды"
+	},
+	"vk_history": {
+		"message": "Истории"
+	},
+	"vk_people_you_may_know": {
+		"message": "Возможные друзья"
+	},
+	"vk_ads": {
+		"message": "Реклама"
+	},
+	"vk_menu": {
+		"message": "Пункты меню"
+	},
+	"fb_history": {
+		"message": "Истории"
+	},
+	"fb_people_you_may_know": {
+		"message": "Вы можете их знать"
+	},
+	"fb_did_you_know": {
+		"message": "Пункты меню"
+	}
+}

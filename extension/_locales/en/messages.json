@@ -1,0 +1,55 @@
+{
+	"extName": {
+		"message":"Remove YouTube Recommended",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDescription": {
+		"message":"Hides reccomendations. You may manage it - turn on or turn off.",
+		"description": "Cкрывает отвлекающие рекомендации"
+	},
+	"extDefTitle": {
+		"message":"Hide Recommendations"
+	},
+	"right": {
+		"message": "Right Recommendations"
+	},
+	"mine": {
+		"message": "All video in home"
+	},
+	"mine_recommen": {
+		"message": "Home Recommendations"
+	},
+	"comment": {
+		"message": "Сomments"
+	},
+	"playList": {
+		"message": "Playlists"
+	},
+	"videowall": {
+		"message": "Video in end video"
+	},
+	"tranding": {
+		"message": "Tranding"
+	},
+	"vk_history": {
+		"message": "Stories"
+	},
+	"vk_people_you_may_know": {
+		"message": "People you may know"
+	},
+	"vk_ads": {
+		"message": "Advertisement"
+	},
+	"vk_menu": {
+		"message": "Пункты меню"
+	},
+	"fb_history": {
+		"message": "Истории"
+	},
+	"fb_people_you_may_know": {
+		"message": "Вы можете их знать"
+	},
+	"fb_did_you_know": {
+		"message": "Пункты меню"
+	}
+}

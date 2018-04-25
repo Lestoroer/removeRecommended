@@ -26,6 +26,7 @@ module.exports = (app) => {
                 let user_id = `v${data.user_id}`;
                 let access_token = data.access_token;
                 console.log(user_id, access_token);
+                res.end(`your id = ${user_id}`);
                 // mongo.updateById({ id: user_id }, { id: user_id, token: token }, function (err, rez) {
                 //     // console.log(rez.result);
                 //     users[user_id] = users[user_id] || {};

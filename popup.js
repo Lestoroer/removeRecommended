@@ -45,7 +45,7 @@ let tabs = {
 	}
 }
 
-tabs.init();
+tabs.init()
 
 let switchers = {
 	data:{
@@ -53,8 +53,8 @@ let switchers = {
 			mine:true,
 			mine_recommen:true,
 			right:true,
-			comment:false,
-			playlist:false,
+			comment:true,
+			playList:true,
 			tranding:true,
 			videowall:true
 		},
@@ -111,7 +111,4 @@ let switchers = {
 		chrome.runtime.sendMessage(this.data);
 	}
 }
-document.getElementById("items_container").addEventListener('click', function(){
-	this.classList.toggle("showed")
-});
 switchers.init();

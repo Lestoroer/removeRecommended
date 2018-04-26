@@ -1,14 +1,20 @@
 {
 	"extName": {
 		"message":"Скрыть рекомендации YouTube",
-		"description": "Cкрывает отвлекающие рекомендации"
+		"description": "Скрыть рекомендации YouTube"
 	},
 	"extDescription": {
 		"message":"Расширение скрывает рекомендации на YouTube. Достаточно поставить флажок в нужное положение.",
-		"description": "Cкрывает отвлекающие рекомендации"
+		"description": "Скрыть рекомендации YouTube"
 	},
 	"extDefTitle": {
-		"message":"Блокировать рекомендации"
+		"message":"Блокировать рекомедации"
+	},
+	"support_project": {
+		"message": "Поддержать проект"
+	},
+	"login": {
+		"message": "Войти:"
 	},
 	"right": {
 		"message":"Правые рекомендации"
@@ -43,13 +49,124 @@
 	"vk_menu": {
 		"message": "Пункты меню"
 	},
+	"vk_menu_myprofile": {
+		"message": "Мой профиль"
+	},
+	"vk_menu_news": {
+		"message": "Новости"
+	},
+	"vk_menu_messages": {
+		"message": "Сообщения"
+	},
+	"vk_menu_friends": {
+		"message": "Друзья"
+	},
+	"vk_menu_communities": {
+		"message": "Группы"
+	},
+	"vk_menu_photos": {
+		"message": "Фотографии"
+	},
+	"vk_menu_music": {
+		"message": "Музыка"
+	},
+	"vk_menu_videos": {
+		"message": "Видеозаписи"
+	},
+	"vk_menu_games": {
+		"message": "Игры"
+	},
+	"vk_menu_market": {
+		"message": "Магазин"
+	},
+	"vk_menu_bookmarks": {
+		"message": "Закладки"
+	},
+	"vk_menu_documents": {
+		"message": "Документы"
+	},
 	"fb_history": {
 		"message": "Истории"
 	},
 	"fb_people_you_may_know": {
 		"message": "Вы можете их знать"
 	},
-	"fb_did_you_know": {
-		"message": "Пункты меню"
+	"fb_menu_items": {
+		"message": "Menu items"
+	},
+	"fb_menu_groups": {
+		"message": "Группы"
+	},
+	"fb_menu_pages": {
+		"message": "Страницы"
+	},
+	"fb_menu_events": {
+		"message": "Мероприятия"
+	},
+	"fb_menu_friend_lists": {
+		"message": "Списки друзей"
+	},
+	"fb_menu_on_this_day": {
+		"message": "В этот день"
+	},
+	"fb_menu_pages_feed": {
+		"message": "Лента Страниц"
+	},
+	"fb_menu_photos": {
+		"message": "Фото"
+	},
+	"fb_menu_find_friends": {
+		"message": "Найти друзей"
+	},
+	"fb_menu_games": {
+		"message": "Игры"
+	},
+	"fb_menu_suggest_edits": {
+		"message": "Правки"
+	},
+	"fb_menu_offers": {
+		"message": "Предложения"
+	},
+	"fb_menu_live_video": {
+		"message": "Прямой эфир"
+	},
+	"fb_menu_payment_history": {
+		"message": "История платежей"
+	},
+	"fb_menu_gaming_video": {
+		"message": "Игровые трансляции"
+	},
+	"fb_menu_buy_and_sell_groups": {
+		"message": "Группы для покупки и продажи товаров"
+	},
+	"fb_menu_create_a_frame": {
+		"message": "Создайте рамку"
+	},
+	"fb_menu_discover_people": {
+		"message": "Интересные люди"
+	},
+	"fb_menu_crisis_response": {
+		"message": "Кризисное реагирование"
+	},
+	"fb_menu_recommendations": {
+		"message": "Рекомендации"
+	},
+	"fb_menu_recent_ad_activity": {
+		"message": "Недавние действия с рекламой"
+	},
+	"fb_menu_saved": {
+		"message": "Сохраненное"
+	},
+	"fb_menu_moves": {
+		"message": "Moves"
+	},
+	"fb_menu_weather": {
+		"message": "Погода"
+	},
+	"fb_menu_manage_apps": {
+		"message": "Управление приложениями"
+	},
+	"fb_menu_insights": {
+		"message": "Статистика"
 	}
 }

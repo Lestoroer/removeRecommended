@@ -6,8 +6,10 @@
     },
     "google":{
         "client_id":"111546025166-2sbkj641pmrcpstrkjkb6ssfpcaqmhu2.apps.googleusercontent.com",
-        "oldid":"//111546025166-mftr8t8mq7lqu123r23vmd81hq3e2ng5.apps.googleusercontent.com",
-        "client_secret":"c7lC2SzEV4tFW2CmjHAm1kct",
-        "oldsecret":"eQPcI-d6QrRvKvG2-Hml1hpy"
+        "client_secret":"c7lC2SzEV4tFW2CmjHAm1kct"
+    },
+    "facebook":{
+        "client_id":"555418988176141",
+        "client_secret":"45e62f74addf27f1f09ef35d9313f0a1"
     }
 }

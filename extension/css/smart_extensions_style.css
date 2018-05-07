@@ -193,17 +193,33 @@ html[fb_people_you_may_know="true"] #fbSearchResultsBox {
 }
 
 
-html[vk_menu_myprofile="true"] #l_pr,
-html[vk_menu_news="true"] #l_nwsf,
-html[vk_menu_messages="true"] #l_msg,
-html[vk_menu_friends="true"] #l_fr,
-html[vk_menu_communities="true"] #l_gr,
-html[vk_menu_photos="true"] #l_ph,
-html[vk_menu_music="true"] #l_aud,
-html[vk_menu_videos="true"] #l_vid,
-html[vk_menu_games="true"] #l_ap,
-html[vk_menu_market="true"] #l_mk,
-html[vk_menu_bookmarks="true"] #l_fav,
-html[vk_menu_documents="true"] #l_doc {
-    display: none;
+html[vk_menu_myprofile="false"] #l_pr,
+html[vk_menu_news="false"] #l_nwsf,
+html[vk_menu_messages="false"] #l_msg,
+html[vk_menu_friends="false"] #l_fr,
+html[vk_menu_communities="false"] #l_gr,
+html[vk_menu_photos="false"] #l_ph,
+html[vk_menu_music="false"] #l_aud,
+html[vk_menu_videos="false"] #l_vid,
+html[vk_menu_games="false"] #l_ap,
+html[vk_menu_market="false"] #l_mk,
+html[vk_menu_bookmarks="false"] #l_fav,
+html[vk_menu_documents="false"] #l_doc {
+	display: none !important;
 }
+
+
+/*html[vk_menu_myprofile="true"] #l_pr,*/
+/*html[vk_menu_news="true"] #l_nwsf,*/
+/*html[vk_menu_messages="true"] #l_msg,*/
+/*html[vk_menu_friends="true"] #l_fr,*/
+/*html[vk_menu_communities="true"] #l_gr,*/
+/*html[vk_menu_photos="true"] #l_ph,*/
+/*html[vk_menu_music="true"] #l_aud,*/
+/*html[vk_menu_videos="true"] #l_vid,*/
+/*html[vk_menu_games="true"] #l_ap,*/
+/*html[vk_menu_market="true"] #l_mk,*/
+/*html[vk_menu_bookmarks="true"] #l_fav,*/
+/*html[vk_menu_documents="true"] #l_doc {*/
+    /*display: none;*/
+/*}*/

@@ -7,6 +7,7 @@ function loadCSS(file='smart_extensions_style') {
 	document.getElementsByTagName("html")[0].appendChild(link);
 }
 loadCSS();
+
 function start(data) {
     console.log('data', data);
 	chrome.storage.sync.get(function(item) {
@@ -22,13 +23,6 @@ function start(data) {
     });
 }
 start();
-chrome.runtime.onMessage.addListener(function (data) { 
-    // return console.log(data);
-    console.log(data);
+chrome.runtime.onMessage.addListener(function (data) {
 	start(data);
-
 });
-
-
-
-console.log('content');

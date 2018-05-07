@@ -13,7 +13,7 @@ let tabs = {
 		let last_content = document.querySelector('.active[content]');
 		if (last_content) last_content.classList.remove('active');
 		
-		let current_content = document.querySelector(`[content="${name}"]`)
+		let current_content = document.querySelector(`[content="${name}"]`);
 		if (current_content) current_content.classList.add('active');
 	},
 	event: function(e) {
@@ -27,7 +27,6 @@ let tabs = {
 		let index = populs.indexOf(site_name);
 		if (index > -1) {
 			populs.unshift(populs.splice(index, 1)[0]);
-			console.log(populs);
 		}
 		switchers.data.sort = populs;
 		chrome.storage.sync.set(switchers.data);
@@ -59,21 +58,21 @@ let switchers = {
 			videowall:true
 		},
 		'vk.com': {
-			vk_history:false,
+			vk_history:true,
 			vk_people_you_may_know:true,
 			vk_ads:true,
-            vk_menu_myprofile: false,
-            vk_menu_news: false,
-            vk_menu_messages: false,
-            vk_menu_friends: false,
-            vk_menu_communities: false,
-            vk_menu_photos: false,
-            vk_menu_music: false,
-            vk_menu_videos: false,
-            vk_menu_games: false,
-            vk_menu_market: false,
-            vk_menu_bookmarks: false,
-            vk_menu_documents: false,
+            vk_menu_myprofile: true,
+            vk_menu_news: true,
+            vk_menu_messages: true,
+            vk_menu_friends: true,
+            vk_menu_communities: true,
+            vk_menu_photos: true,
+            vk_menu_music: true,
+            vk_menu_videos: true,
+            vk_menu_games: true,
+            vk_menu_market: true,
+            vk_menu_bookmarks: true,
+            vk_menu_documents: true,
 		},
 		'facebook': {
 			fb_people_you_may_know:true,
@@ -85,7 +84,7 @@ let switchers = {
 		chrome.storage.sync.get((data) => {
 			console.log(data, 12);
 			populs = Object.keys(this.data);
-			if (data.sort) {
+			if (data.sort && data.sort.length > 0) {
 				populs = data.sort;
 			}
 			tabs.load();
@@ -105,7 +104,7 @@ let switchers = {
 					check.addEventListener('click', (e) => {this.event(e);});
 				}	
 			}
-            updateVkMenuPickCount();
+            updatePickCount();
 		});
 	},
 	event: function(e) {
@@ -119,22 +118,54 @@ let switchers = {
 		let site_name = content.getAttribute('content');
 		this.data[site_name][name] = current;
 		chrome.storage.sync.set(this.data);
-		console.log(this.data);
+
 		chrome.runtime.sendMessage(this.data);
-        console.log(document.getElementsByClassName('vk_items')[0]);
-        updateVkMenuPickCount();
+        updatePickCount();
 	}
 }
 
-function updateVkMenuPickCount() {
-    let dom_vk_menu_pick_count = document.getElementById('vk_menu_pick_count');
-    console.log(document.getElementsByClassName('vk_items')[0]);
-    let checkbox_picked = document.getElementsByClassName('vk_items')[0].querySelectorAll('.checkbox[checked="true"]');
-    dom_vk_menu_pick_count.innerText = checkbox_picked.length;
+let items_classes = ['.vk_items', '.fs_items'];
 
+for (let i = 0; i < items_classes.length; i++) {
+	let item_class = items_classes[i];
+    js.listen(js.query(`.items${item_class}`), 'click', (event) => {
+        if (event.target.closest(`${item_class}`)) {
+            return js.toggleClass(document.querySelector(`.row_items_scroll${item_class}`), 'showed');
+        }
+    });
 }
 
-/*document.getElementById("test").addEventListener('click', function(){
-	console.log(this)
-});*/
+let items_pick_classes = ['.vk_items', '.fs_items'];
+
+function updatePickCount() {
+
+    // for (let i = 0; i < items_pick_classes.length; i++) {
+    //     let item_class = items_classes[i];
+    //     js.listen(js.query(`.items${item_class}`), 'click', (event) => {
+    //         if (event.target.closest(`${item_class}`)) {
+    //             return js.toggleClass(document.querySelector(`.row_items_scroll${item_class}`), 'showed');
+    //         }
+    //     });
+    // }
+    //
+    // let dom_vk_menu_pick_count = document.getElementById('vk_menu_pick_count');
+    // let checkbox_picked = document.getElementsByClassName('vk_items')[0].querySelectorAll('.checkbox[checked="true"]');
+    // dom_vk_menu_pick_count.innerText = checkbox_picked.length;
+}
+
+// js.listen(js.queryAll('.items.superclass_space'), 'click', (event) => {
+// 	console.log(event.target);
+//     if (event.target.closest('.vk_items')) {
+//     	console.log(document.querySelector('.row_items_scroll.vk_items'));
+//         return js.toggleClass(document.querySelector('.row_items_scroll.vk_items'), 'showed');
+//     }
+//
+//     if (event.target.closest('.fs_items')) {
+//         return document.querySelector('.row_items_scroll.fs_items').toggle("showed");
+//     }
+// });
+
+
+
+
 switchers.init();

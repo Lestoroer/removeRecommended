@@ -196,16 +196,19 @@ body {
   padding-bottom: 9px;
   border-bottom: 1px solid #ebebed;
 }
-.vk_items > .wrapper_text{
+.items > .wrapper_text{
   margin-right: 14px;
   cursor: pointer;
 }
-.row.vk_items{
+.row.items{
   position: relative;
   cursor: default;
 }
 .row:nth-last-child(1){
   border-bottom: 1px solid rgba(0,0,0, .0);
+}
+.row.items.showed .arrow{
+  transform: rotate(180deg);
 }
 .arrow{
   position: absolute;
@@ -219,9 +222,20 @@ body {
   margin-left: 5px;
 }
 .row_items_scroll{
+  display: none;
   background: rgba(240,240,240, .7);
   margin: 10px -16px 0 -16px;
 }
+
+.row.vk_items{
+  /*display: none;*/
+}
+
+.row_items_scroll.vk_items.showed,
+.row_items_scroll.fs_items.showed{
+  display: block;
+}
+
 .row_items_container{
   background: rgba(240,240,240, .7);
   max-height: 155px;

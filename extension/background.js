@@ -10,7 +10,6 @@
 chrome.runtime.onMessage.addListener(function(request){
 	chrome.tabs.query({},function(tabs){     
 	    tabs.forEach(function(tab) {
-			console.log('for tabs');
 			for (let i in request) {
 				if (i === 'sort') continue;
 				if (tab.url.search(i) > -1) {

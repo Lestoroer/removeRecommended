@@ -7,8 +7,8 @@ app.get('/', (req, res) => {
     res.end(':)');
 });
 
-require('./server/vk') (app);
-require('./server/google') (app);
-require('./server/facebook') (app);
+require('./auth/vk') (app);
+require('./auth/google') (app);
+require('./auth/facebook') (app);
 
 app.listen(80);

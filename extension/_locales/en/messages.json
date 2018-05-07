@@ -85,11 +85,20 @@
 	"vk_menu_documents": {
 		"message": "Documents"
 	},
+	"vk_menu_ads": {
+		"message": "Ads"
+	},
 	"fb_people_you_may_know": {
 		"message": "People you may know"
 	},
 	"fb_menu_items": {
 		"message": "Menu items"
+	},
+	"fb_menu_news_feed": {
+		"message": "News Feed"
+	},
+	"fb_menu_items_messenger": {
+		"message": "Messenger"
 	},
 	"fb_menu_groups": {
 		"message": "Groups"

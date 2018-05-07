@@ -204,22 +204,35 @@ html[vk_menu_videos="false"] #l_vid,
 html[vk_menu_games="false"] #l_ap,
 html[vk_menu_market="false"] #l_mk,
 html[vk_menu_bookmarks="false"] #l_fav,
-html[vk_menu_documents="false"] #l_doc {
+html[vk_menu_documents="false"] #l_doc,
+html[vk_menu_ads="false"] #l_ads {
 	display: none !important;
 }
 
-
-/*html[vk_menu_myprofile="true"] #l_pr,*/
-/*html[vk_menu_news="true"] #l_nwsf,*/
-/*html[vk_menu_messages="true"] #l_msg,*/
-/*html[vk_menu_friends="true"] #l_fr,*/
-/*html[vk_menu_communities="true"] #l_gr,*/
-/*html[vk_menu_photos="true"] #l_ph,*/
-/*html[vk_menu_music="true"] #l_aud,*/
-/*html[vk_menu_videos="true"] #l_vid,*/
-/*html[vk_menu_games="true"] #l_ap,*/
-/*html[vk_menu_market="true"] #l_mk,*/
-/*html[vk_menu_bookmarks="true"] #l_fav,*/
-/*html[vk_menu_documents="true"] #l_doc {*/
-    /*display: none;*/
-/*}*/
+html[fb_menu_news_feed="false"] #navItem_4748854339,
+html[fb_menu_items_messenger="false"] #navItem_217974574879787,
+html[fb_menu_groups="false"] #navItem_1434659290104689,
+html[fb_menu_pages="false"] #navItem_2530096808,
+html[fb_menu_events="false"] #navItem_2344061033,
+html[fb_menu_friend_lists="false"] #navItem_1572366616371383,
+html[fb_menu_on_this_day="false"] #navItem_303257506544370,
+html[fb_menu_pages_feed="false"] #navItem_140472815972081,
+html[fb_menu_find_friends="false"] #navItem_2356318349,
+html[fb_menu_manage_apps="false"] #navItem_2345053339,
+html[fb_menu_recommendations="false"] #navItem_577076605805053,
+html[fb_menu_insights="false"] #navItem_188833664616804,
+html[fb_menu_games="false"] #navItem_140332009231,
+html[fb_menu_photos="false"] #navItem_2305272732,
+html[fb_menu_offers="false"] #navItem_526732794016279,
+html[fb_menu_live_video="false"] #navItem_1031093773624602,
+html[fb_menu_payment_history="false"] #navItem_969105076459966,
+html[fb_menu_gaming_video="false"] #navItem_285571681929755,
+html[fb_menu_buy_and_sell_groups="false"] #navItem_1433252076974635,
+html[fb_menu_discover_people="false"] #navItem_645191315628772,
+html[fb_menu_crisis_response="false"] #navItem_765518473459969,
+html[fb_menu_recent_ad_activity="false"] #navItem_280033845760645,
+html[fb_menu_saved="false"] #navItem_586254444758776,
+html[fb_menu_create_a_frame="false"] #navItem_336549256737756,
+html[fb_menu_weather="false"] #navItem_302677536798470 {
+	display: none !important;
+}

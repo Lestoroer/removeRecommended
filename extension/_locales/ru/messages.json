@@ -85,6 +85,9 @@
 	"vk_menu_documents": {
 		"message": "Документы"
 	},
+	"vk_menu_ads": {
+		"message": "Реклама"
+	},
 	"fb_history": {
 		"message": "Истории"
 	},
@@ -93,6 +96,12 @@
 	},
 	"fb_menu_items": {
 		"message": "Menu items"
+	},
+	"fb_menu_news_feed": {
+		"message": "Лента новостей"
+	},
+	"fb_menu_items_messenger": {
+		"message": "Messenger"
 	},
 	"fb_menu_groups": {
 		"message": "Группы"

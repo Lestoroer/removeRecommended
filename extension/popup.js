@@ -108,14 +108,16 @@ let switchers = {
 	dom: document.querySelectorAll('.checkbox'),
 	init: function() {
 		chrome.storage.sync.get((data) => {
+			let header = document.querySelector('.header');
 			if (data.login) {
-				console.log('login',data.login);
-				let header = document.querySelector('.header');
+				console.log('login', data.login);
 				header.classList.add('logIn');
 				let img = header.querySelector('.sign_in img');
-				img.src = data.login.photo_50;
+				img.src = data.login.photo;
 				let name = header.querySelector('[name]');
-				name.innerHTML = `${data.login.first_name} ${data.login.last_name}`;
+				name.innerHTML = data.login.name;//`${data.login.first_name} ${data.login.last_name}`;
+			} else {
+				header.classList.remove('logIn');
 			}
 			populs = Object.keys(this.data);
 			if (data.sort && data.sort.length > 0) {
@@ -158,6 +160,15 @@ let switchers = {
 	}
 }
 
+function exit() {
+	chrome.storage.sync.get((data) => {
+		delete data.login;
+		console.log(data);
+		chrome.storage.sync.remove(['login']);
+		switchers.init();
+	});
+}
+
 let items_classes = ['vk_items', 'fs_items'];
 
 for (let i = 0; i < items_classes.length; i++) {
@@ -181,6 +192,7 @@ function updatePickCount() {
     }
 }
 
+document.querySelector('.sign_in').addEventListener('click', exit);
 
 
 switchers.init();

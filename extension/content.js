@@ -30,7 +30,7 @@ chrome.runtime.onMessage.addListener(function (data) {
 });
 
 window.onload = function () {
-    if (location.href.includes('127.0.0.1')) {
+    if (['127.0.0.1','smart-extension.com'].includes(location.href)) {
         let login = document.querySelector('[login]');
         if (!login) return;
         let user = JSON.parse(login.innerHTML);

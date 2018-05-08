@@ -33,7 +33,7 @@ window.onload = function () {
     if (location.href.includes('127.0.0.1')) {
         let login = document.querySelector('[login]');
         if (!login) return;
-        let user = JSON.parse(login.innerHTML).response[0];
+        let user = JSON.parse(login.innerHTML);
         // console.log(JSON.parse(data).response[0]);
         chrome.storage.sync.get((data) => {
             console.log('success');

@@ -113,9 +113,9 @@ let switchers = {
 				let header = document.querySelector('.header');
 				header.classList.add('logIn');
 				let img = header.querySelector('.sign_in img');
-				img.src = data.login.photo_50;
+				img.src = data.login.photo;
 				let name = header.querySelector('[name]');
-				name.innerHTML = `${data.login.first_name} ${data.login.last_name}`;
+				name.innerHTML = data.login.name;//`${data.login.first_name} ${data.login.last_name}`;
 			}
 			populs = Object.keys(this.data);
 			if (data.sort && data.sort.length > 0) {

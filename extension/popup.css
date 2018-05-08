@@ -58,9 +58,12 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-right: 10px;
 }
 .header.logIn .sign_in{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header.logIn .entrance{
   display: none;

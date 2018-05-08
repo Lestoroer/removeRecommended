@@ -30,11 +30,11 @@ chrome.runtime.onMessage.addListener(function (data) {
 });
 
 window.onload = function () {
-    if (['127.0.0.1','smart-extension.com'].includes(location.href)) {
+    if (location.href.includes('127.0.0.1') || location.href.includes('smart-extension.com')) {
         let login = document.querySelector('[login]');
         if (!login) return;
         let user = JSON.parse(login.innerHTML);
-        // console.log(JSON.parse(data).response[0]);
+        console.log(user);
         chrome.storage.sync.get((data) => {
             console.log('success');
             data.login = user;

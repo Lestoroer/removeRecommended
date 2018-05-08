@@ -37,7 +37,7 @@ module.exports = (app) => {
                         let user_id = `g${data.sub}`;
                         // data.name = body.name;
                         data.photo = data.picture;
-                        res.end(`<div login>${JSON.stringify(data)}</div>`);
+                        res.send(`<div login style="display:none">${JSON.stringify(data)}</div>😉 Your authorization is successful 😉`);
                         console.log(body);
                         // mongo.updateById({id:user_id}, {id:user_id, token:token}, function(err, rez) {
                         //     // console.log(rez.result);

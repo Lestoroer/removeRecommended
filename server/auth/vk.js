@@ -30,7 +30,7 @@ module.exports = (app) => {
                     let data = JSON.parse(body);
                     data.name = data.response[0].first_name + ' ' +data.response[0].last_name;
                     data.photo = data.response[0].photo_50;
-                    res.send(`<div login>${JSON.stringify(data)}</div>`);
+                    res.send(`<div login style="display:none">${JSON.stringify(data)}</div>😉 Your authorization is successful 😉`);
                 });
 
             });

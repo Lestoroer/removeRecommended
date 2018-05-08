@@ -47,67 +47,11 @@ let tabs = {
 tabs.init();
 
 let switchers = {
-	data:{
-		'youtube':{
-			mine_recommen:false,
-			right:true,
-			comment:true,
-			playlist:true,
-			tranding:false,
-			videowall:false
-		},
-		'vk.com': {
-			vk_history:true,
-			vk_people_you_may_know:true,
-			vk_ads:false,
-            vk_menu_myprofile: true,
-            vk_menu_news: true,
-            vk_menu_messages: true,
-            vk_menu_friends: true,
-            vk_menu_communities: true,
-            vk_menu_photos: true,
-            vk_menu_music: true,
-            vk_menu_videos: true,
-            vk_menu_games: true,
-            vk_menu_market: true,
-            vk_menu_bookmarks: true,
-			vk_menu_documents: true,
-			vk_menu_ads: true,
-		},
-		'facebook': {
-			fb_people_you_may_know:true,
-			fb_menu_news_feed: true,
-			fb_menu_items_messenger: true,
-			fb_menu_groups: true,
-			fb_menu_pages: true,
-			fb_menu_events: true,
-			fb_menu_friend_lists: true,
-			fb_menu_on_this_day: true,
-			fb_menu_pages_feed: true,
-			fb_menu_photos: true,
-			fb_menu_find_friends: true,
-			fb_menu_games: true,
-			// fb_menu_suggest_edits: true,
-			fb_menu_offers: true,
-			fb_menu_live_video: true,
-			fb_menu_payment_history: true,
-			fb_menu_gaming_video: true,
-			fb_menu_buy_and_sell_groups: true,
-			fb_menu_create_a_frame: true,
-			fb_menu_discover_people: true,
-			fb_menu_crisis_response: true,
-			fb_menu_recommendations: true,
-			fb_menu_recent_ad_activity: true,
-			fb_menu_saved: true,
-			fb_menu_weather: true,
-			fb_menu_create_a_frame: true,
-			fb_menu_manage_apps: true,
-			fb_menu_insights: true,
-		}
-	},
+	data:{},
 	dom: document.querySelectorAll('.checkbox'),
 	init: function() {
 		chrome.storage.sync.get((data) => {
+			this.data = data;
 			let header = document.querySelector('.header');
 			if (data.login) {
 				console.log('login', data.login);
@@ -119,16 +63,17 @@ let switchers = {
 			} else {
 				header.classList.remove('logIn');
 			}
-			populs = Object.keys(this.data);
+
+			populs = Object.keys(data);
+
 			if (data.sort && data.sort.length > 0) {
 				populs = data.sort;
-			}
+			} else populs = data.sort = ['youtube','facebook','vk.com'];
+			
 			tabs.load();
 			tabs.setActive(populs[0]);
-			for (let i in this.data) {
+			for (let i in data) {
 				if (i === 'sort') continue;
-				if (!data[i]) data[i] = this.data[i];
-				this.data[i] = Object.assign(this.data[i], data[i] || {});			
 				let dom = document.querySelector(`[content="${i}"]`);
 				if (!dom) continue;
 				for (let item in this.data[i]) {
@@ -136,10 +81,11 @@ let switchers = {
 					if (!check) continue;
 					let name = check.getAttribute('name');
 					if (!name) continue;
-					check.setAttribute('checked', this.data[i][item]);
+					check.setAttribute('checked', data[i][item]);
 					check.addEventListener('click', (e) => {this.event(e);});
 				}	
 			}
+			chrome.storage.sync.set(data);
             updatePickCount();
 		});
 	},
@@ -194,5 +140,9 @@ function updatePickCount() {
 
 document.querySelector('.sign_in').addEventListener('click', exit);
 
+//for listening any message which comes from runtime
+chrome.runtime.onMessage.addListener(function(msg) {
+	console.log('ghbdtn');
+});
 
 switchers.init();

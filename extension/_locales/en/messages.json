@@ -20,9 +20,6 @@
 		"message": "Right Recommendations"
 	},
 	"mine": {
-		"message": "All video in home"
-	},
-	"mine_recommen": {
 		"message": "Home Recommendations"
 	},
 	"comment": {

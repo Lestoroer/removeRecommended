@@ -108,7 +108,15 @@ let switchers = {
 	dom: document.querySelectorAll('.checkbox'),
 	init: function() {
 		chrome.storage.sync.get((data) => {
-			console.log(data, 12);
+			if (data.login) {
+				console.log('login',data.login);
+				let header = document.querySelector('.header');
+				header.classList.add('logIn');
+				let img = header.querySelector('.sign_in img');
+				img.src = data.login.photo_50;
+				let name = header.querySelector('[name]');
+				name.innerHTML = `${data.login.first_name} ${data.login.last_name}`;
+			}
 			populs = Object.keys(this.data);
 			if (data.sort && data.sort.length > 0) {
 				populs = data.sort;

@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(function(request){
 	chrome.tabs.query({},function(tabs){     
 	    tabs.forEach(function(tab) {
 			for (let i in request) {
-				if (i === 'sort') continue;
+				if (i === 'sort' || i === 'login') continue;
 				if (tab.url.search(i) > -1) {
 					chrome.tabs.sendMessage(tab.id, request);
 				}

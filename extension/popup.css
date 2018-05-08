@@ -51,6 +51,19 @@ body {
 }
 .sign_in{
   margin-bottom: 2px;
+  display: none;
+}
+.sign_in_text{
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header.logIn .sign_in{
+  display: flex;
+}
+.header.logIn .entrance{
+  display: none;
 }
 .pro_version{
   vertical-align: top;
@@ -265,6 +278,8 @@ body {
   color: #1b1b1b;
   margin-right: 9px;
   font-size: 13px;
+  max-width: 203px;
+  text-align: right;
 }
 .checkbox:before{
   content:'';

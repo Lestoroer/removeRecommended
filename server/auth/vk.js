@@ -27,7 +27,10 @@ module.exports = (app) => {
 
                 request(`https://api.vk.com/method/users.get?user_ids=${user_id}&fields=photo_50,city,verified&access_token=${access_token}&v=5.74`, function(err, rez, body) {
                     if (err) return console.log(err);
-                    res.send(`<div login>${body}</div>`);
+                    let data = JSON.parse(body);
+                    data.name = data.response[0].first_name + ' ' +data.response[0].last_name;
+                    data.photo = data.response[0].photo_50;
+                    res.send(`<div login>${JSON.stringify(data)}</div>`);
                 });
 
             });

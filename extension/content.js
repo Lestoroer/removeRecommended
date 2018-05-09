@@ -8,10 +8,8 @@ function loadCSS(file='smart_extensions_style') {
 }
 loadCSS();
 
-console.log(location.href);
 
 function start(data) {
-    console.log('data', data);
 	chrome.storage.sync.get(function(item) {
         for (let i in item) {
             if (i === 'sort' || i === 'login') continue;
@@ -34,9 +32,8 @@ window.onload = function () {
         let login = document.querySelector('[login]');
         if (!login) return;
         let user = JSON.parse(login.innerHTML);
-        console.log(user);
+
         chrome.storage.sync.get((data) => {
-            console.log('success');
             data.login = user;
             chrome.storage.sync.set(data);
         });

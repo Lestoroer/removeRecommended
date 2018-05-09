@@ -54,7 +54,6 @@ let switchers = {
 			this.data = data;
 			let header = document.querySelector('.header');
 			if (data.login) {
-				console.log('login', data.login);
 				header.classList.add('logIn');
 				let img = header.querySelector('.sign_in img');
 				img.src = data.login.photo;
@@ -96,7 +95,7 @@ let switchers = {
 		let current = !(enable === 'true');
 		e.target.setAttribute('checked', current);
 		let content = e.target.closest('[content]');
-		if (!content) return console.log('err_1');
+		if (!content) return;
 		let site_name = content.getAttribute('content');
 		this.data[site_name][name] = current;
 		chrome.storage.sync.set(this.data);
@@ -109,7 +108,6 @@ let switchers = {
 function exit() {
 	chrome.storage.sync.get((data) => {
 		delete data.login;
-		console.log(data);
 		chrome.storage.sync.remove(['login']);
 		switchers.init();
 	});
@@ -142,7 +140,6 @@ js.get('#login_exit').addEventListener('click', exit);
 
 //for listening any message which comes from runtime
 chrome.runtime.onMessage.addListener(function(msg) {
-	console.log('ghbdtn');
 });
 
 switchers.init();

@@ -6,7 +6,7 @@
     "description": "__MSG_extDescription__",
     "short_name": "HYR",
     "manifest_version": 2,
-    "version": "1.0.1",
+    "version": "1.1",
 
     "icons": {        
         "16": "smart_extensions.png",

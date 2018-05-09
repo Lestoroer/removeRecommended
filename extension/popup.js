@@ -138,7 +138,7 @@ function updatePickCount() {
     }
 }
 
-js.get('#log_in_exit').addEventListener('click', exit);
+js.get('#login_exit').addEventListener('click', exit);
 
 //for listening any message which comes from runtime
 chrome.runtime.onMessage.addListener(function(msg) {

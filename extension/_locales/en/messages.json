@@ -13,6 +13,9 @@
 	"support_project": {
 		"message": "Support project"
 	},
+	"help" : {
+		"message" : "Reload the page if the changes do not apply automatically"
+	},
 	"login": {
 		"message": "Log in:"
 	},

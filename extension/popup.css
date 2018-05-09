@@ -35,7 +35,6 @@ body {
 .main{
   width: 300px;
   background: rgb(255, 255, 255);
-  border-radius: 10px;
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2); 
 }
 .entrance_text{
@@ -48,6 +47,16 @@ body {
 }
 .header{
   padding: 11px 14px 0 20px;
+}
+.help_text{
+  font-family: roboto;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  color: rgba(0,0,0, .6);
+}
+.help_text span{
+  font-family: roboto_bold;
 }
 .sign_in{
   margin-bottom: 2px;
@@ -330,7 +339,6 @@ body {
 .checkbox[checked="true"]:after{
   left:19px;
 }
-
 footer {
   padding: 13px 0px;
   background: #f6f6f6;
@@ -348,6 +356,7 @@ footer {
   cursor: pointer;
   padding: 7px 19px;
   text-align: center;
+  text-transform: uppercase;
   margin: 0px auto;
   line-height: 11px;
   border-radius: 16px;

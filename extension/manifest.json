@@ -6,7 +6,7 @@
     "description": "__MSG_extDescription__",
     "short_name": "HYR",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.1",
 
     "icons": {        
         "16": "smart_extensions.png",
@@ -16,7 +16,7 @@
     },
 
   "content_scripts": [{
-    "matches": ["*://*/*"],
+    "matches": ["*://*.youtube.com/*", "*://*.vk.com/*", "*://*.facebook.com/*", "*://*.smart-extension.com/*"],
     "js": ["content.js"],
     "run_at" : "document_start"
   }],

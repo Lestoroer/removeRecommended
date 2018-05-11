@@ -11,4 +11,4 @@ require('./auth/vk') (app);
 require('./auth/google') (app);
 require('./auth/facebook') (app);
 
-app.listen(80);
+app.listen(8080);

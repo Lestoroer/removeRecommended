@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Lestoroer/removeRecommended#readme",
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3",
     "request": "^2.85.0"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.35"
   }
 }

@@ -7,8 +7,13 @@ app.get('/', (req, res) => {
     res.end(':)');
 });
 
-require('./auth/vk') (app);
-require('./auth/google') (app);
-require('./auth/facebook') (app);
+require('./auth/vk')(app);
+require('./auth/google')(app);
+require('./auth/facebook')(app);
+
+let alerts = require('./DonationAlerts');
+setTimeout(() => {
+    alerts.load();
+}, 1000);
 
 app.listen(8080);

@@ -147,7 +147,7 @@ html[right="false"] #main.ytd-watch, html[right="false"] #top.ytd-watch {
  }
 }
 
-html[tranding="false"] .ytd-guide-section-renderer[role="option"]:nth-child(2n) {
+html[tranding="false"] #guide .ytd-guide-section-renderer [href="/feed/trending"] {
  	display: none;
 }
 

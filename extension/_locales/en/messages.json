@@ -1,11 +1,14 @@
 {
 	"extName": {
-		"message":"Remove Youtube recommendations",
-		"description": "Remove Youtube recommendations"
+		"message":"Remove Recommendations Youtube VK Facebook",
+		"description": "Remove Recommendations Youtube VK Facebook"
 	},
 	"extDescription": {
-		"message":"The extension hides YouTube recommendations. It is enough to put a check mark in the necessary position.",
-		"description": "Remove Youtube recommendations"
+		"message":"The extension hides YouTube Vk Facebook recommendations. It is enough to put a check mark in the necessary position.",
+		"description": "Remove Recommendations Youtube VK Facebook"
+	},
+	"extShortName": {
+		"message":"Remove Recommendations Youtube"
 	},
 	"extDefTitle": {
 		"message":"Hide Recommendations"
@@ -35,7 +38,7 @@
 		"message": "Videowall in end video"
 	},
 	"tranding": {
-		"message": "Tranding"
+		"message": "Trending"
 	},
 	"vk_history": {
 		"message": "Stories"

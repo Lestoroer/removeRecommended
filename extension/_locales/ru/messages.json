@@ -1,11 +1,14 @@
 {
 	"extName": {
-		"message":"Скрыть рекомендации YouTube",
-		"description": "Скрыть рекомендации YouTube"
+		"message":"Скрыть рекомендации YouTube Vk Facebook",
+		"description": "Скрыть рекомендации YouTube Vk Facebook"
 	},
 	"extDescription": {
-		"message":"Расширение скрывает рекомендации на YouTube. Достаточно поставить флажок в нужное положение.",
-		"description": "Скрыть рекомендации YouTube"
+		"message":"Расширение скрывает рекомендации на YouTube Vk Facebook. Достаточно поставить флажок в нужное положение.",
+		"description": "Скрыть рекомендации YouTube Vk Facebook"
+	},
+	"extShortName": {
+		"message":"Скрыть рекомендации YouTube"
 	},
 	"extDefTitle": {
 		"message":"Блокировать рекомедации"

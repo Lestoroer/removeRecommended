@@ -113,6 +113,10 @@ html[right="false"] #related {
 	display: none !important;
 }
 
+html[right="false"] #columns #secondary {
+	display: none;
+}
+
 
 html[right="false"] #playlist > .ytd-playlist-panel-renderer {
 	min-width:290px;

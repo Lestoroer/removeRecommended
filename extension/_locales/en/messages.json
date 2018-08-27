@@ -49,6 +49,9 @@
 	"vk_ads": {
 		"message": "Advertisement"
 	},
+	"vk_logo": {
+		"message": "VK logo"
+	},
 	"vk_menu": {
 		"message": "Menu items"
 	},

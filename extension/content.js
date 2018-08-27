@@ -1,3 +1,5 @@
+
+loadCSS();
 function loadCSS(file='smart_extensions_style') {
 	var link = document.createElement("link");
 	link.href = chrome.extension.getURL('css/' + file + '.css');
@@ -6,9 +8,8 @@ function loadCSS(file='smart_extensions_style') {
 	link.rel = "stylesheet";
 	document.getElementsByTagName("html")[0].appendChild(link);
 }
-loadCSS();
 
-
+start();
 function start(data) {
 	chrome.storage.sync.get(function(item) {
         for (let i in item) {
@@ -22,7 +23,7 @@ function start(data) {
         }
     });
 }
-start();
+
 chrome.runtime.onMessage.addListener(function (data) {
 	start(data);
 });

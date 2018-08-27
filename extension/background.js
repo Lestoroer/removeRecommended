@@ -18,6 +18,7 @@ let def = {
 		vk_history:true,
 		vk_people_you_may_know:true,
 		vk_ads:false,
+		vk_logo:true,
 		vk_menu_myprofile: true,
 		vk_menu_news: true,
 		vk_menu_messages: true,

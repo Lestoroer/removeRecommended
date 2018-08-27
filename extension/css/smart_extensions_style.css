@@ -113,15 +113,26 @@ html[right="false"] #related {
 	display: none !important;
 }
 
+/* html[right="false"] #columns {
+	justify-content: center !important;
+}
+
+html[right="false"] #primary {
+	display: flex !important;
+} */
+
 html[right="false"] #columns #secondary {
+	width: 0 !important;
+    min-width: 0 !important;
+}
+
+html[right="false"] #columns #related {
 	display: none;
 }
 
-
 html[right="false"] #playlist > .ytd-playlist-panel-renderer {
-	min-width:290px;
+	min-width:278px;
 }
-
 
 @media (min-width: 1000px) and (max-width: 1500px) {
 	html[right="false"] #playlist > .ytd-playlist-panel-renderer {
@@ -130,7 +141,7 @@ html[right="false"] #playlist > .ytd-playlist-panel-renderer {
 }
 
 
-@media (min-width: 1520px) {
+@media (min-width: 1921px) {
 	html[right="false"] #playlist > .ytd-playlist-panel-renderer {
 		min-width: 356px;
 	}
@@ -163,11 +174,11 @@ html[mine_recommen="false"] #contents:first-child div#dismissable.style-scope.yt
 	display: none;
 }
 
-html[vk_people_you_may_know="false"] #friends_possible_block{
+html[vk_people_you_may_know="false"] #friends_possible_block {
 	display: none;
 }
 
-html[vk_ads="false"] .ads_ads_box{
+html[vk_ads="false"] ._ads_promoted_post_data_w {
 	display: none;
 }
 
@@ -177,11 +188,16 @@ html[vk_ads="false"] #ads_left {
 
 html[vk_ads="false"] [class~="_ads"] {
 	display: none;
-}
+} /*_ads_promoted_post_data_w*/
 
 html[vk_history="false"] .stories_feed_wrap{
 	display: none;
 } 
+
+html[vk_logo="false"] .top_home_logo {
+	display: none;
+} 
+
 html[fb_people_you_may_know="false"] [data-story_category="4"]{
 	display: none;
 }

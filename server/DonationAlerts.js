@@ -3,6 +3,8 @@ const MongoClient = require('mongodb').MongoClient;
 
 const config = require('./config');
 
+console.log(111, config.mongo_link);
+
 let db;
 
 MongoClient.connect(config.mongo_link, (err, database) => {

@@ -12,8 +12,10 @@ require('./auth/google')(app);
 require('./auth/facebook')(app);
 
 let alerts = require('./DonationAlerts');
-setTimeout(() => {
+
+setInterval(() => {
     alerts.load();
-}, 1000);
+}, 10000);
+
 
 app.listen(8080);

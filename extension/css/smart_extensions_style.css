@@ -14,9 +14,9 @@ html[playlist="false"] #player-playlist .watch-playlist, html[playlist="false"] 
  	display: none;
  }
 
-html[right="false"] #page .content-alignment {
+/* html[right="false"] #page .content-alignment {
 	min-width: auto !important;
-}
+} */
 
 /*скрыть левый сайт бар и еще кучу дерьма после видео*/
 html[right="false"] #watch7-sidebar, html[right="false"] .video-ads/*, html[right="false"]  .html5-endscreen*/ {
@@ -113,17 +113,27 @@ html[right="false"] #related {
 	display: none !important;
 }
 
-/* html[right="false"] #columns {
-	justify-content: center !important;
-}
-
-html[right="false"] #primary {
-	display: flex !important;
-} */
-
-html[right="false"] #columns #secondary {
+html[right="false"] #columns #secondary, .ytp-iv-video-content {
 	width: 0 !important;
     min-width: 0 !important;
+}
+
+html[right="false"] .html5-video-container {
+	position: static !important;
+}
+
+html[right="false"] .html5-main-video {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+html[right="false"] .ytp-chrome-bottom {
+	width: 100% !important;
+	left: 0 !important;
+}
+
+html[right="false"] .ytp-play-progress {
+	transform: scaleX(1) !important;
 }
 
 html[right="false"] #columns #related {
@@ -188,7 +198,7 @@ html[vk_ads="false"] #ads_left {
 
 html[vk_ads="false"] [class~="_ads"] {
 	display: none;
-} /*_ads_promoted_post_data_w*/
+}
 
 html[vk_history="false"] .stories_feed_wrap{
 	display: none;

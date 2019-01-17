@@ -39,16 +39,26 @@ window.onload = function () {
             chrome.storage.sync.set(data);
         });
     }
+    // console.log(document.querySelector('.ytp-progress-list'))
+    // document.querySelector('.ytp-progress-list').addEventListener('mousemove', function(event) {
+    //     console.log(event.clientX)
+    //     document.querySelector('.ytp-hover-progress').style.width = `${event.clientX}px`;
+    // });
 
 
 }
 
+// setInterval( () => {
 
-setInterval( () => {
-    const ytpPlayProgress = document.querySelector('.ytp-hover-progress');
-    if (!ytpPlayProgress) return;
-    const ytpPlayProgressLeft = parseInt(ytpPlayProgress.style.left, 10);
-    console.log(ytpPlayProgressLeft)
-    document.querySelector('.ytp-play-progress').style.width = `${ytpPlayProgressLeft}px`;
-}, 100);
+//     // const isRightRecommended = document.querySelector('html').getAttribute('right')
+//     // if (isRightRecommended === 'true') return;
+    
+
+//     const ytpPlayProgress = document.querySelector('.ytp-hover-progress');
+//     if (!ytpPlayProgress) return;
+//     const ytpPlayProgressLeft = parseInt(ytpPlayProgress.style.left, 10);
+    
+//     document.querySelector('.ytp-play-progress').style.width = `${ytpPlayProgressLeft}px`;
+// }, 100);
+
     

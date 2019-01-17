@@ -1,4 +1,3 @@
-
 html[comment="false"] #watch-discussion, html[comment="false"] #watch-sidebar-discussion, html[comment="false"] #comments {
 	display: none;
 }
@@ -114,6 +113,17 @@ html[right="false"] #related {
 	display: none !important;
 }
 
+/*new*/
+html[right="false"] .html5-video-container {
+	width: 100%;
+    height: 100%;
+}
+
+html[right="false"] .html5-video-container .html5-main-video  {
+	width: 100% !important;
+    height: 100%;
+}
+
 /* html[right="false"] #columns {
 	justify-content: center !important;
 }
@@ -128,17 +138,6 @@ html[right="false"] #columns #secondary {
 
 html[right="false"] #columns #related {
 	display: none;
-}
-
-/* new */
-html[right="false"] .html5-video-container {
-	width: 100%;
-    height: 100%;
-}
-
-html[right="false"] .html5-video-container .html5-main-video  {
-	width: 100% !important;
-    height: 100% !important;
 }
 
 html[right="false"] #playlist > .ytd-playlist-panel-renderer {

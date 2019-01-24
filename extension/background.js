@@ -17,6 +17,8 @@ let def = {
 	'vk.com': {
 		vk_history:true,
 		vk_people_you_may_know:true,
+		vk_interesting_groups: false,
+		vk_news_recommendation: false,
 		vk_ads:false,
 		vk_logo:true,
 		vk_menu_myprofile: true,

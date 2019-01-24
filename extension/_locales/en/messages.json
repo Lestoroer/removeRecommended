@@ -46,6 +46,12 @@
 	"vk_people_you_may_know": {
 		"message": "People you may know"
 	},
+	"vk_interesting_groups": {
+		"message": "Interesting groups"
+	},
+	"vk_news_recommendation": {
+		"message": "Recommendation in news"
+	},
 	"vk_ads": {
 		"message": "Advertisement"
 	},

@@ -52,6 +52,7 @@ let switchers = {
 	init: function() {
 		chrome.storage.sync.get((data) => {
 			this.data = data;
+			
 			let header = document.querySelector('.header');
 			if (data.login) {
 				header.classList.add('logIn');
@@ -71,6 +72,7 @@ let switchers = {
 			
 			tabs.load();
 			tabs.setActive(populs[0]);
+
 			for (let i in data) {
 				if (i === 'sort') continue;
 				let dom = document.querySelector(`[content="${i}"]`);

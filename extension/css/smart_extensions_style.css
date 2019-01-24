@@ -189,6 +189,18 @@ html[vk_people_you_may_know="false"] #friends_possible_block {
 	display: none;
 }
 
+html[vk_interesting_groups="false"] #groups_filters_wrap {
+	display: none;
+}
+
+/* html[vk_interesting_groups="false"] #groups_filters_wrap {
+	display: none;
+} */
+
+html[vk_news_recommendation="false"] .page_block.apps_feedRightAppsBlock_collaborative_recommend_apps {
+	display: none;
+}
+
 html[vk_ads="false"] ._ads_promoted_post_data_w {
 	display: none;
 }

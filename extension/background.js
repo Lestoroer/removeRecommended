@@ -67,13 +67,14 @@ let def = {
 	}
 };
 
-chrome.storage.sync.get((user_data) => {
-	let data = {};
-	for (let i in def) {
-		if (!user_data[i]) user_data[i] = def[i];
-		data[i] = user_data[i];
+chrome.storage.sync.get(data => {
+	for (let site in def) {
+		if (data[site] === undefined) data[site] = {}
+		for (let param in def[site]) {
+			if (data[site][param] === undefined) data[site][param] = def[site][param]
+		}
 	}
-	chrome.storage.sync.set(data);
+	chrome.storage.sync.set(data)
 })
 
 chrome.runtime.onMessage.addListener(function(request){

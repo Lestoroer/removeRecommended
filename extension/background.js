@@ -7,7 +7,7 @@
 
 let def = {
 	'youtube':{
-		mine:false,
+		mine:true,
 		right:false,
 		comment:true,
 		playlist:true,
@@ -34,6 +34,7 @@ let def = {
 		vk_menu_bookmarks: true,
 		vk_menu_documents: true,
 		vk_menu_ads: true,
+		vk_menu_pay: true,
 	},
 	'facebook': {
 		fb_people_you_may_know:true,

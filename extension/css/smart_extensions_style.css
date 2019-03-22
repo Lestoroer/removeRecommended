@@ -123,8 +123,12 @@ html[right="false"] #primary {
 
 html[right="false"] #columns #secondary {
 	width: 0 !important;
-    min-width: 0 !important;
+	min-width: 0 !important;
 }
+
+/* html[right="false"] ytd-watch-flexy[flexy_][is-two-columns_] #columns.ytd-watch-flexy {
+    justify-content: center;
+} */
 
 html[right="false"] #columns #related {
 	display: none;
@@ -185,9 +189,18 @@ html[mine_recommen="false"] #contents:first-child div#dismissable.style-scope.yt
 	display: none;
 }
 
+/* html[right="false"] #secondary {
+	display: none !important;
+} */
+
+
+
+
+html[vk_people_you_may_know="false"] #profile_friends_recomm,
 html[vk_people_you_may_know="false"] #friends_possible_block {
 	display: none;
 }
+
 
 html[vk_interesting_groups="false"] #groups_filters_wrap {
 	display: none;
@@ -248,7 +261,12 @@ html[vk_menu_games="false"] #l_ap,
 html[vk_menu_market="false"] #l_mk,
 html[vk_menu_bookmarks="false"] #l_fav,
 html[vk_menu_documents="false"] #l_doc,
-html[vk_menu_ads="false"] #l_ads {
+html[vk_menu_ads="false"] #l_ads,
+html[vk_menu_pay="false"] #l_vkp {
+	display: none !important;
+}
+
+html[vk_menu_pay="false"] #side_bar_inner .more_div.l_main {
 	display: none !important;
 }
 

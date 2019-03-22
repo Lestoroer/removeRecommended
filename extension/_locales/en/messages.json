@@ -100,6 +100,9 @@
 	"vk_menu_ads": {
 		"message": "Ads"
 	},
+	"vk_menu_pay": {
+		"message": "Vk Pay"
+	},
 	"fb_people_you_may_know": {
 		"message": "People you may know"
 	},

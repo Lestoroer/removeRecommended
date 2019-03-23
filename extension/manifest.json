@@ -6,7 +6,7 @@
     "description": "__MSG_extDescription__",
     "short_name": "Remove Recommendations Youtube",
     "manifest_version": 2,
-    "version": "1.3.1",
+    "version": "1.4",
 
     "icons": {        
         "16": "smart_extensions.png",
@@ -16,7 +16,7 @@
     },
 
   "content_scripts": [{
-    "matches": ["*://*.youtube.com/*", "*://*.vk.com/*", "*://*.facebook.com/*", "*://*.smart-extension.com/*"],
+    "matches": ["*://*.youtube.com/*", "*://*.vk.com/*", "*://*.facebook.com/*"],
     "js": ["content.js"],
     "run_at" : "document_start"
   }],

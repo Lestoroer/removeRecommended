@@ -3,13 +3,14 @@ html[comment="false"] #watch-discussion, html[comment="false"] #watch-sidebar-di
 	display: none;
 }
 
-html[mine="false"] #feed, html[mine="false"] #video-masthead {
-	display: none;
-}
-
+html[mine="false"] #feed, 
+html[mine="false"] #video-masthead,
 html[mine="false"] ytd-browse[page-subtype="home"] {
 	display: none;
 }
+
+
+/* mine_recomm */
 
 html[playlist="false"] #player-playlist .watch-playlist, html[playlist="false"] #playlist {
  	display: none;
@@ -20,13 +21,32 @@ html[right="false"] #page .content-alignment {
 }
 
 /*скрыть левый сайт бар и еще кучу дерьма после видео*/
-html[right="false"] #watch7-sidebar, html[right="false"] .video-ads/*, html[right="false"]  .html5-endscreen*/ {
+html[right="false"] #watch7-sidebar, 
+html[right="false"] .ytp-ad-overlay-slot,
+html[right="false"] .ytp-ad-progress-list {
 	display: none;	
 }
+
+
+/* , html[right="false"] .video-ads */
 
 html[right="false"] #masthead-positioner {
 	margin: auto;
 }
+
+
+html[right="false"] #player.skeleton.flexy #player-wrap {
+	width: 100%;
+}
+
+html[right="false"] body {
+	overflow-y: scroll !important;
+}
+
+/* html[right="false"] #secondary {
+	display: none;
+} */
+
 
 /*размеры футера*/
 html[right="false"] #yt-masthead, html[right="false"] #footer {
@@ -114,21 +134,21 @@ html[right="false"] #related {
 	display: none !important;
 }
 
-/* html[right="false"] #columns {
-	justify-content: center !important;
-}
-html[right="false"] #primary {
-	display: flex !important;
-} */
 
 html[right="false"] #columns #secondary {
 	width: 0 !important;
 	min-width: 0 !important;
+	padding: 24px 0 0 0;
 }
 
-/* html[right="false"] ytd-watch-flexy[flexy_][is-two-columns_] #columns.ytd-watch-flexy {
-    justify-content: center;
-} */
+html[right="false"] #columns #secondary #chat {
+	position: absolute;
+}
+
+
+html[mine_ad="false"] ytd-video-masthead-ad-renderer {
+	display: none !important;
+}
 
 html[right="false"] #columns #related {
 	display: none;
@@ -185,9 +205,13 @@ html[videowall="false"] .html5-endscreen {
 	display: none;
 }
 
-html[mine_recommen="false"] #contents:first-child div#dismissable.style-scope.ytd-shelf-renderer{
+/* html[videowall="false"] .ytp-ce-element */
+
+/* .ytp-ce-element ytp-ce-playlist ytp-ce-bottom-left-quad ytp-ce-size-1280 ytp-ce-element-show */
+
+/* html[mine_recommen="false"] #contents:first-child div#dismissable.style-scope.ytd-shelf-renderer{
 	display: none;
-}
+} */
 
 /* html[right="false"] #secondary {
 	display: none !important;
@@ -198,7 +222,7 @@ html[mine_recommen="false"] #contents:first-child div#dismissable.style-scope.yt
 
 html[vk_people_you_may_know="false"] #profile_friends_recomm,
 html[vk_people_you_may_know="false"] #friends_possible_block {
-	display: none;
+	display: none !important;
 }
 
 
@@ -210,17 +234,20 @@ html[vk_interesting_groups="false"] #groups_filters_wrap {
 	display: none;
 } */
 
-html[vk_news_recommendation="false"] .page_block.apps_feedRightAppsBlock_collaborative_recommend_apps {
+html[vk_news_recommendation="false"] .page_block.apps_feedRightAppsBlock_collaborative_recommend_apps,
+html[vk_news_recommendation="false"] .page_block.apps_feedRightAppsBlock {
 	display: none;
 }
 
-html[vk_ads="false"] ._ads_promoted_post_data_w {
+html[vk_ads="false"] ._ads_promoted_post_data_w,
+html[vk_ads="false"] #ads_left,
+html[vk_ads="false"] ._ads_block_data_w {
 	display: none;
 }
 
-html[vk_ads="false"] #ads_left {
+/* html[vk_ads="false"] #ads_left {
 	display: none;
-}
+} */
 
 html[vk_ads="false"] [class~="_ads"] {
 	display: none;

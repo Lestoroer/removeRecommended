@@ -23,10 +23,16 @@
 		"message": "Log in:"
 	},
 	"right": {
-		"message": "Right Recommendations"
+		"message": "Show Right Recomm"
 	},
 	"mine": {
-		"message": "Home Recommendations"
+		"message": "Show Home Recomm"
+	},
+	"mine_ad": {
+		"message": "Show Home Ad"
+	},
+	"mine_recomm": {
+		"message": "Show Home Recomm"
 	},
 	"comment": {
 		"message": "Сomments"

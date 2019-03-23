@@ -270,7 +270,7 @@ body {
 
 .row_items_container{
   background: rgba(240,240,240, .7);
-  max-height: 155px;
+  max-height: 144px;
   margin: 10px 5px 0 0px;
   overflow-y: auto;
 }

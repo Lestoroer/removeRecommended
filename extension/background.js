@@ -8,17 +8,19 @@
 let def = {
 	'youtube':{
 		mine:true,
+		// mine_recomm:false,
+		mine_ad:false,
 		right:false,
 		comment:true,
 		playlist:true,
 		tranding:false,
-		videowall:false
+		videowall:false,
 	},
 	'vk.com': {
 		vk_history:true,
-		vk_people_you_may_know:true,
-		vk_interesting_groups: false,
-		vk_news_recommendation: false,
+		vk_people_you_may_know:false,
+		vk_interesting_groups:false,
+		vk_news_recommendation:false,
 		vk_ads:false,
 		vk_logo:true,
 		vk_menu_myprofile: true,
@@ -37,8 +39,8 @@ let def = {
 		vk_menu_pay: true,
 	},
 	'facebook': {
-		fb_people_you_may_know:true,
-		fb_menu_news_feed: true,
+		fb_people_you_may_know:false,
+		fb_menu_news_feed:true,
 		fb_menu_items_messenger: true,
 		fb_menu_groups: true,
 		fb_menu_pages: true,

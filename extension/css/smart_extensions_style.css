@@ -221,7 +221,8 @@ html[videowall="false"] .html5-endscreen {
 
 
 html[vk_people_you_may_know="false"] #profile_friends_recomm,
-html[vk_people_you_may_know="false"] #friends_possible_block {
+html[vk_people_you_may_know="false"] #friends_possible_block,
+html[vk_people_you_may_know="false"] .feed_friends_recomm  {
 	display: none !important;
 }
 

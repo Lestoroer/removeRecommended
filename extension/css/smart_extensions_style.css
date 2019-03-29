@@ -146,7 +146,8 @@ html[right="false"] #columns #secondary #chat {
 }
 
 
-html[mine_ad="false"] ytd-video-masthead-ad-renderer {
+html[mine_ad="false"] ytd-video-masthead-ad-renderer,
+html[mine_ad="false"] #masthead-ad {
 	display: none !important;
 }
 

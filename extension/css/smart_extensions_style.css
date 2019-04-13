@@ -163,7 +163,8 @@ html[right="false"] .html5-video-container {
 
 html[right="false"] .html5-video-container .html5-main-video  {
 	width: 100% !important;
-    height: 100% !important;
+	height: 100% !important;
+	left: 0 !important;
 }
 
 html[right="false"] #playlist > .ytd-playlist-panel-renderer {

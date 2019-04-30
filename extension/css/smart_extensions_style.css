@@ -43,6 +43,9 @@ html[right="false"] body {
 	overflow-y: scroll !important;
 }
 
+html[right="false"] body.no-scroll {
+	overflow: hidden !important;
+}
 /* html[right="false"] #secondary {
 	display: none;
 } */

@@ -34,10 +34,6 @@ html[right="false"] #masthead-positioner {
 	margin: auto;
 }
 
-html[right="false"] ytd-watch-flexy[flexy_][is-two-columns_][is-extra-wide-video_] #primary.ytd-watch-flexy, ytd-watch-flexy[flexy_][is-two-columns_][is-four-three-to-sixteen-nine-video_] #primary.ytd-watch-flexy {
-	max-width: 1193px;
-}
-
 
 html[right="false"] #player.skeleton.flexy #player-wrap {
 	width: 100%;
@@ -186,11 +182,17 @@ html[right="false"] #playlist > .ytd-playlist-panel-renderer {
 }
 
 
-@media (min-width: 1921px) {
-	html[right="false"] #playlist > .ytd-playlist-panel-renderer {
-		min-width: 356px;
+/* ytd-watch-flexy #primary.ytd-watch-flexy */
+
+/* html[right="false"] ytd-watch-flexy #primary.ytd-watch-flexy {
+	max-width: 1279px !important;
+} */
+
+/* @media (max-width: 1921px) {
+	html[right="false"] ytd-watch-flexy[flexy_][is-two-columns_][is-extra-wide-video_] #primary.ytd-watch-flexy, ytd-watch-flexy[flexy_][is-two-columns_][is-four-three-to-sixteen-nine-video_] #primary.ytd-watch-flexy {
+		max-width: 1279px;
 	}
-}
+} */
 
 
 html[right="false"] #playlist .ytd-watch {

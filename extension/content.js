@@ -43,33 +43,32 @@ window.onload = function () {
     setMaxWidthGlobalContainer();
 }
 
-
 chrome.storage.local.get('smart_ext_width', function (obj) {
     if (!obj || obj && !obj.smart_ext_width) {
         return setMaxWidthGlobalContainer();
     }
-    console.log(obj.smart_ext_width)
     setMaxWidthGlobalContainer(obj.smart_ext_width);
-
 });
 
 
 /**  */
-let interval;
+// let interval;
 
-window.addEventListener('resize', (event) => {
-    if (interval) return;
-    let count = 0;
-    interval = setInterval( () => {
-        console.log(count++)
-        setMaxWidthGlobalContainer();
-    }, 80);
+// window.addEventListener('resize', (event) => {
+//     if (interval) return;
+//     interval = setInterval( () => {
+//         setMaxWidthGlobalContainer();
+//     }, 80);
 
-    setTimeout(() => {
-        clearInterval(interval);
-        interval = null;
-    }, 3500);
-})
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         interval = null;
+//     }, 3500);
+// })
+
+setInterval( () => {
+    setMaxWidthGlobalContainer();
+}, 150);
 
 
 function setMaxWidthGlobalContainer(localWidth) {

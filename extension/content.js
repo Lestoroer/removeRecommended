@@ -40,14 +40,36 @@ window.onload = function () {
         });
     }
 
+    setMaxWidthGlobalContainer();
 }
 
-chrome.storage.sync.get('smart_ext_width', function (obj) {
+
+chrome.storage.local.get('smart_ext_width', function (obj) {
     if (!obj || obj && !obj.smart_ext_width) {
         return setMaxWidthGlobalContainer();
     }
+    console.log(obj.smart_ext_width)
     setMaxWidthGlobalContainer(obj.smart_ext_width);
+
 });
+
+
+/**  */
+let interval;
+
+window.addEventListener('resize', (event) => {
+    if (interval) return;
+    let count = 0;
+    interval = setInterval( () => {
+        console.log(count++)
+        setMaxWidthGlobalContainer();
+    }, 80);
+
+    setTimeout(() => {
+        clearInterval(interval);
+        interval = null;
+    }, 3500);
+})
 
 
 function setMaxWidthGlobalContainer(localWidth) {
@@ -59,15 +81,11 @@ function setMaxWidthGlobalContainer(localWidth) {
         width = mainVideo.style.width;
         if (!width) return;
 
-        chrome.storage.sync.set({'smart_ext_width': width});
+        chrome.storage.local.set({'smart_ext_width': width});
     }
 
     setStyle(width);
 }
-
-setInterval(() => {
-    setMaxWidthGlobalContainer();
-}, 550);
 
 function setStyle(width) {
 
@@ -85,7 +103,6 @@ function setStyle(width) {
 
         style.setAttribute('class', 'smart-ext-style');
         style.type = 'text/css';
-        console.log('appned')
         style.appendChild(document.createTextNode(css));
     } else {
         smartExtStyle.innerHTML = css;

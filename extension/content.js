@@ -40,15 +40,15 @@ window.onload = function () {
         });
     }
 
-    setMaxWidthGlobalContainer();
+    //setMaxWidthGlobalContainer();
 }
 
-chrome.storage.local.get('smart_ext_width', function (obj) {
-    if (!obj || obj && !obj.smart_ext_width) {
-        return setMaxWidthGlobalContainer();
-    }
-    setMaxWidthGlobalContainer(obj.smart_ext_width);
-});
+// chrome.storage.local.get('smart_ext_width', function (obj) {
+//     if (!obj || obj && !obj.smart_ext_width) {
+//         return setMaxWidthGlobalContainer();
+//     }
+//     setMaxWidthGlobalContainer(obj.smart_ext_width);
+// });
 
 
 /**  */
